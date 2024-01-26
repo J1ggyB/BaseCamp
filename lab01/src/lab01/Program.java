@@ -34,7 +34,7 @@ public class Program {  /* Every program needs a class with a main method
 	public static void main(String[] args) {   // The main method
 		
 			System.out.println("Hello World"); //Each statement must be terminated by ;
-		    System.out.println("My name is J1ggyB");
+		    System.out.println("My name is Graeme");
 		    // Thoughts - So "System" must be a class it is capitalised
 		    // ... and "println()" looks like a method it is lower case
 		    // So what is "out" ????
