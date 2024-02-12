@@ -1,4 +1,4 @@
-package com.StubExample;
+package com.StubRun;
 
 public class Student {  // A CLASS STUDENT WITH 3 FIELDS "ID", "name" & "Course"
 	private int ID;
@@ -38,3 +38,4 @@ public Student (String name, String course) {  // THE CONSTRUCTOR TAKES A VALUE 
 		}
 	}
 }
+
