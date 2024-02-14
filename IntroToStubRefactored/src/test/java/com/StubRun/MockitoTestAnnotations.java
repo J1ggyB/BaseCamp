@@ -5,13 +5,14 @@ import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-public class MockitoTestAnnotations {			         //Create a class to Test our Business implementation
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
+public class MockitoTestAnnotations {			         //Create a class to Test our Business implementation
+	@Mock
 	private ServiceInterface service;        //Create fields: "ServiceInterface service" is the customers interface 
 	private ServiceBusImpl serviceBusImpl;                // "ServiceBusImpl serviceBusImpl" is our business logic
     private List <Student> allStudents;                   // "List allStudents" will hold our Student data
@@ -22,10 +23,11 @@ public class MockitoTestAnnotations {			         //Create a class to Test our Bu
 	@BeforeEach                      
 	public void initEach(){
         //Here we:
-		// 1] A mock to imitate the class that will eventually implement the ServiceInterface
-		// 2] Pass the mock as a parameter to an new instance of ServiceBusImpl() "our business logic class"
-		// 3] Populate our "allStudents" List
-		service = Mockito.mock(ServiceInterface.class);  //Note: The use of class and not interface
+		// 1] Pass the mock as a parameter to an new instance of ServiceBusImpl() "our business logic class"
+		// 2] Populate our "allStudents" List
+		
+		//service = Mockito.mock(ServiceInterface.class);  //Note: With MockitoAnnotations we don't need the mock instance
+		MockitoAnnotations.openMocks(this);
 		serviceBusImpl = new ServiceBusImpl(service);
 		DummyClass studentList = new DummyClass();
 		this.allStudents = (studentList.retrieveStudents());
