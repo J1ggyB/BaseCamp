@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class CalculatorTest {      // Create a class with a meaningful name ~CalculatorClass
+class CalculatorTest {      // Create a class with a meaningful name ~CalculatorTest
 	private Calculator calculator;  // Create a field to hold an instance of Calculator
 
 	@BeforeEach                          // Tells junit what to setup before each test
