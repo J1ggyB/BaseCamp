@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- COVERS CRUD-CREATE  -->
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="registerPage.css">
+<title>Register a course</title>
+</head>
+<body>
+<header>
+<h2>User Registration:</h2>
+</header>
+<nav>
+<ul>
+<li> <a class = "active" href="index.jsp">Home</a> </li>
+<li> <a class = "active" href="Registration.html">Registration</a> </li>
+</ul>
+</nav>
+<main>
+<form method = "post" action = "studentRegistrationServletPath">
+ <label for="firstName">First name:</label>
+<input type="text" id="firstName" name="firstName"> 
+ <label for="lastname">Last name:</label>
+ <input type="text" id="lastName" name="lastName"> 
+ <label for="email">E-Mail:</label>
+<input type="text" id="email" name="email"> 
+ <label for="houseNo">House number:</label>
+<input type="text" id="houseNumber" name="houseNumber"> 
+ <label for="postCode">Post Code:</label>
+<input type="text" id="postCode" name="postCode"> 
+<input type="Submit" value="Submit" />
+</form>
+</main>
+</body>
+</html>
