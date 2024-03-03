@@ -3,24 +3,24 @@ package labs02;
 public class Program {
 
 	public static void main(String[] args) { // main method to start program
-		String name = "Graeme Watson"; // Declare and initialise a String referenced name
-		int age = 59; // Declare and initialise an int with value 59
-		int houseNumber = 172; // declare and initialise (whole number)
-		String addressLine1 = "Arran Crescent"; // declare and initialise
-		String addressLine2 = "East Kilbride"; // declare and initialise
+		String name = "Graeme Watson"; // Declare and initialise a String referenced name ie: Type String ref name value "Graeme Watson"
+		int age = 59; // Declare and initialise an int with value 59 (int = whole number)
+		int houseNumber = 172; // declare and initialise (int = whole number)
+		String addressLine1 = "Arran Crescent"; // declare and initialise (String - an array of characters)
+		String addressLine2 = "East Kilbride"; // declare and initialise  (String) - note: Strings are immutable
 		String postCode = "G74 2LB"; // declare and initialise
 		String company = "QA Ltd"; // declare and initialise
 		String telNo = "7844466621"; // declare and initialise
-		double salary = 60000.00; // declare and initialise a double (real number)
+		double salary = 60000.00; // declare and initialise a double (real number ie: has a decimal point)
 		boolean holdCurrDrvLic = true; // declare and initialise a boolean true/false
 		System.out.println("My details are: " + "\n----------------\n" + name + "\nage: " + age 
 				+ "\n" + houseNumber + " " + addressLine1 + "\n" 
 				+ addressLine2 + "\n" + postCode + "\n" + company 
 				+ "\nTelNo: " + telNo + "\nSalary: " + salary 
 				+ "\nDriving License: " + holdCurrDrvLic);
-		// Notice the use of + for concatenation and \n to create a new line within the String
+		// Notice the use of + for concatenation (joining Strings)and \n to create a new line within the String
 		// What is different about String to the other data types?
-		
+		//Remember "out" is an instance of the class PrintStream that is a property of the System class
 		//--------------Maths---------------------------------//
 		int number = 5;
 		System.out.println("Initial Value: " + number);

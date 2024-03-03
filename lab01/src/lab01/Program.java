@@ -7,7 +7,7 @@
 
 package lab01;// The package is a place to group related classes (ie: code structures)
 
-// A class is a template used to describe objects (a car, a student etc)
+// A class is a template/blueprint used to describe objects (a car, a student etc)
 // An object is a particular "instance" of a class ( that single BMW, Brian Smith etc)
 
 
@@ -22,7 +22,7 @@ public class Program {  /* Every program needs a class with a main method
 	//public - Means that the method is accessible (or visible) by all other classes
 	
 	//static - Means that it is a class method & there will be no instances of it
-	// Think of that as there will be only one "main()"
+	// An example will be that there will be only one "main()method or the program"
 	
 	// void - Means that the method main will run but not return a value on completion
 	
@@ -34,7 +34,7 @@ public class Program {  /* Every program needs a class with a main method
 	public static void main(String[] args) {   // The main method
 		
 			System.out.println("Hello World"); //Each statement must be terminated by ;
-		    System.out.println("My name is Graeme");
+		    System.out.println("My name is Figsuffer Burningboom");
 		    // Thoughts - So "System" must be a class it is capitalised
 		    // ... and "println()" looks like a method it is lower case
 		    // So what is "out" ????

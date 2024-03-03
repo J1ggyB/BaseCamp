@@ -16,7 +16,7 @@ public class UserService {
 	public String register(String username, String password) {
 		// username must not be null or empty
 		if (username == null) throw new IllegalArgumentException("Username must not be null"); //throw exception if username is null
-		String trimmedUsername = username.trim();  //tri white space from username and assign to String trimmedUserName
+		String trimmedUsername = username.trim();  //trim white space from username and assign to String trimmedUserName
 		if (trimmedUsername.isEmpty()) throw new IllegalArgumentException("Username must not be whitespace only");//throw exception if trimmedUserName is empty String
 		
 		// password must not be null or empty
