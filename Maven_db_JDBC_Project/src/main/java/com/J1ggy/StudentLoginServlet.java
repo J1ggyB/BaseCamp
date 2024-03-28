@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class studentLoginServlet
+ //Servlet implementation class studentLoginServlet
  */
-public class studentLoginServlet extends HttpServlet {
+public class StudentLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -34,6 +34,7 @@ public class studentLoginServlet extends HttpServlet {
 				}
 			} catch (SQLException | IOException e) {
 				e.printStackTrace();
+				System.out.println(e);
 			}
 
 	}

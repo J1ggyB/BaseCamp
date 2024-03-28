@@ -1,5 +1,6 @@
-<!-- COVERS CRUD_READ  -->
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="indexPage.css">
@@ -17,7 +18,7 @@
 </ul>
 </nav>
 <main>
-<form method = "post" action = "studentLoginServletPath">
+<form method = "post" action = "StudentLoginServletPath">
 <label for="studentID">Student ID:</label>
 <input type="text" id="studentID" name="studentID"> 
 <label for="pin">PIN number:</label>
@@ -27,3 +28,6 @@
 </main>
 </body>
 </html>
+
+
+

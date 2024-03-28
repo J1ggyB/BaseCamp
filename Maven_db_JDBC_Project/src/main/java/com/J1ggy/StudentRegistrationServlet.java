@@ -1,9 +1,7 @@
 package com.J1ggy;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class studentRegistrationServlet
  */
-public class studentRegistrationServlet extends HttpServlet {
+public class StudentRegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**

@@ -17,20 +17,22 @@ private String dbDriver = "com.mysql.cj.jdbc.Driver";
 	public void loadDriver(String dbDriver) {
 		try {
 			Class.forName(dbDriver);
-		} catch (ClassNotFoundException e) {
+			} catch (ClassNotFoundException e) {
 			e.printStackTrace();
-		}
+			System.out.println(e);
+			}
 	}
 	
 	public Connection getConnection() {
 		Connection con = null;
 		try {
-			con =DriverManager.getConnection(dbUrl, dbUserName, dbPassword);
-		} catch (SQLException e) {
+				con =DriverManager.getConnection(dbUrl, dbUserName, dbPassword);
+			} catch (SQLException e) {
 			e.printStackTrace();
-		}
-		return con;
-	}
+			System.out.println(e);
+			}
+				return con;
+			}
 
 	public boolean validate (LoginBean loginBean) throws SQLException {
 		loadDriver(dbDriver);
@@ -49,8 +51,8 @@ private String dbDriver = "com.mysql.cj.jdbc.Driver";
 			ResultSet rs = pstat.executeQuery();
 			match = rs.next();
 			} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+				e.printStackTrace();
+				System.out.println(e);
 			}
 		return match;
 	}

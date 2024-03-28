@@ -7,7 +7,7 @@ li{display:inline;}
 li a {padding:10px;font-family: Arial, Helvetica, sans-serif;text-decoration: none;}
 li a:hover {background-color: #57e389;}
 a:link {
-  color: black; background-color:#fcbc30
+  color: black; background-color:#fcbc30;
 }
 
 /* visited link */
@@ -25,3 +25,4 @@ a:active {
   color: black;
 }
 form {padding-top:40px;font-family: Arial, Helvetica, sans-serif; color:white;}
+h3 {color: #fcbc30;}

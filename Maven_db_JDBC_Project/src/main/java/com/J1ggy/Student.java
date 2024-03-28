@@ -1,7 +1,7 @@
 package com.J1ggy;
 
-public class Student {
-	private int studentID;
+public class Student {  // Class to hold Student Data
+	private int studentID;  //Private Fields
 	private String firstName;
 	private String lastName;
 	private String enrolmentDate;
@@ -9,10 +9,11 @@ public class Student {
 	private int houseNumber;
 	private String postcode;
 	private int pin;
-	
-	public Student() {
+
+	public Student() {  //uninitialised Constructor
 		super();
 	}
+	//Initialised Constructor
 	public Student(String firstName, String lastName, String email, int houseNumber, String postcode) {
 		super();
 		this.firstName = firstName;
@@ -21,6 +22,7 @@ public class Student {
 		this.houseNumber = houseNumber;
 		this.postcode = postcode;
 	}
+	//Getter and Setter methods
 	public int getStudentID() {
 		return studentID;
 	}
