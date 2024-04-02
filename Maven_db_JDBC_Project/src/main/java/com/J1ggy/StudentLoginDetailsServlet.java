@@ -29,7 +29,7 @@ public class StudentLoginDetailsServlet extends HttpServlet {
 					 response.getWriter().print(result);//Create a PrintWriter to send html response of result
 				} catch (SQLException e) {//catch any error
 					e.printStackTrace();////Stores the exception as a String
-
+					response.getWriter().print(e);
 				}
 
 	}

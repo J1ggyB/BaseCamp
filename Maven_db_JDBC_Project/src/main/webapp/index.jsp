@@ -9,7 +9,11 @@
 <body>
 <header>
 <h2>Welcome to Course Bookings:</h2>
-<h2>Login:</h2>
+<h2>Login: </h2>
+<% Object attribValue = session.getAttribute("sessionStudentID"); 
+if(attribValue != null){%>
+<h3>StudentID<%=attribValue %></h3>
+<%}%>
 </header>
 <nav>
 <ul>

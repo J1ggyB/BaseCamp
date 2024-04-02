@@ -18,6 +18,8 @@
 </ul>
 </nav>
 <body>
-<h2>Welcome - You are now logged in</h2>
+<% Object attribValue = session.getAttribute("sessionStudentID");%>
+<h3>StudentID: <%=attribValue %> </h3>
+<h2>"Welcome - You are now logged in"</h2>
 </body>
 </html>

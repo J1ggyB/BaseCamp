@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  //Servlet implementation class studentLoginServlet
@@ -20,6 +21,9 @@ public class StudentLoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int studentID = Integer.parseInt(request.getParameter("studentID"));
 		int pin = Integer.parseInt(request.getParameter("pin"));
+		HttpSession session = request.getSession();
+		session.setAttribute("sessionStudentID", studentID);
+		session.setAttribute("sessionPIN", pin);
 		LoginBean loginBean = new LoginBean();
 		loginBean.setStudentID(studentID);
 		loginBean.setPin(pin);

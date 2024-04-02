@@ -49,7 +49,7 @@ private String dbDriver = "com.mysql.cj.jdbc.Driver";
 			pstat.setInt(1, loginBean.getStudentID());
 			pstat.setInt(2, loginBean.getPin());
 			ResultSet rs = pstat.executeQuery();
-			match = rs.next();
+			match = rs.next();//returns true if match found
 			} catch (SQLException e) {
 				e.printStackTrace();
 				System.out.println(e);
