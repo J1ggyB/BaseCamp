@@ -21,7 +21,7 @@ public class Game extends Canvas {
 	      Game myGame = new Game();//Create an instance of the Game class
 		}
 	Game() {  //Constructor for Game
-shapes[0] = shape1;//Assign the five instances of ball into the balls Array
+shapes[0] = shape1;//Assign the five instances of Shape into the shapes Array
 shapes[1] = shape2;
 shapes[2] = shape3;
 shapes[3] = shape4;
