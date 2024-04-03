@@ -13,7 +13,8 @@ public class Program {
     			basket.displayDetails();
     			baskets.remove();
     			}
-    	if(baskets.isEmpty()) {System.out.println("All Baskets have now been processed!");}
+    	if(baskets.isEmpty()) {System.out.println("All Baskets have now been processed!\n "
+    			+ "The takings are: " + ShoppingBasket.takings);}
     	}
 public static void main(String[] args) {
 		ShoppingBasket basket1 = new ShoppingBasket("Teddy", 1, 9.99 );
