@@ -16,6 +16,7 @@ public Zoo() {//Constructor
 	    addAnimals(existingAnimals);//addAnimals(String[] Array) - method() call
 	    addAnimals(newAnimals);
 	    displayAnimalData(animalMap);//displayAnimals(HashMap<String, Integer) - method() call
+		System.out.println("\nWe also have Toys and Ice Cream!!!...a Play Park, an Elephant, and a Safari Boat Trip!");
 		}
 
 
