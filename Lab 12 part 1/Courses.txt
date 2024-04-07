@@ -1,0 +1,6 @@
+ COURSE No,COURSE TITLE,COST,LENGTH,START DATE
+ 11001,Intro to Java,£399.00,2 Weeks,06/03/24,
+ 11002,Java Intermediate,£450.00,3 weeks,06/03,24,
+ 11003,Java Advanced, £699.00,5 Weeks,06/03/24,
+ 11004,Intro to JUnit and TDD,£299.00,6 Days,06/03/24,
+ 11005,Intro to Selenium Web Driver,£399.00,9 Days,06/09/24
