@@ -1,0 +1,112 @@
+[
+  {
+    "CustomerID": "C0001",
+    "CompanyName": "Acme",
+    "ContactName": "Wylie Coyote",
+    "ContactTitle": "Wolf",
+    "Address": "1 Looney St",
+    "PostCode": "20",
+    "Country": "USA",
+    "Phone": "07801",
+    "Fax":"07802"
+  },
+  {
+    "CustomerID": "C0002",
+    "CompanyName": "Acme",
+    "ContactName": "Road Runner",
+    "ContactTitle": "Beep Beep",
+    "Address": "2 Looney St",
+    "PostCode": "21",
+    "Country": "USA",
+    "Phone": "07803",
+    "Fax":"07804"
+  },
+  {
+    "CustomerID": "C0003",
+    "CompanyName": "Acme",
+    "ContactName": "Sheep Dog",
+    "ContactTitle": "Shepherd",
+    "Address": "3 Looney St",
+    "PostCode": "22",
+    "Country": "USA",
+    "Phone": "07805",
+    "Fax":"078068"
+  },
+  {
+    "CustomerID": "C0004",
+    "CompanyName": "Carrot Patch",
+    "ContactName": "Elmore Fud",
+    "ContactTitle": "Rabbit Hunter",
+    "Address": "4 Looney St",
+    "PostCode": "23",
+    "Country": "USA",
+    "Phone": "07807",
+    "Fax":"07808"
+  },
+  {
+    "CustomerID": "C0005",
+    "CompanyName": "Carrot Patch",
+    "ContactName": "Bugs Bunny",
+    "ContactTitle": "Rabbit",
+    "Address": "5 Looney St",
+    "PostCode": "24",
+    "Country": "USA",
+    "Phone": "07809",
+    "Fax":"07810"
+  },
+  {
+    "CustomerID": "C0006",
+    "CompanyName": "Looney Tunes",
+    "ContactName": "Daffy Duck",
+    "ContactTitle": "Goody",
+    "Address": "6 Looney St",
+    "PostCode": "25",
+    "Country": "USA",
+    "Phone": "078101",
+    "Fax":"078102"
+  },
+  {
+    "CustomerID": "C0007",
+    "CompanyName": "Looney Tunes",
+    "ContactName": "Yosemite Sam",
+    "ContactTitle": "Baddy",
+    "Address": "7 Looney St",
+    "PostCode": "26",
+    "Country": "USA",
+    "Phone": "078103",
+    "Fax":"078104"
+  },
+  {
+    "CustomerID": "C0008",
+    "CompanyName": "Sega",
+    "ContactName": "Sonic Hedgehog",
+    "ContactTitle": "Runner",
+    "Address": "1 Ring St",
+    "PostCode": "27",
+    "Country": "USA",
+    "Phone": "078105",
+    "Fax":"078106"
+  },
+  {
+    "CustomerID": "C0009",
+    "CompanyName": "Nintendo",
+    "ContactName": "Mario Mario",
+    "ContactTitle": "Run and jumper",
+    "Address": " 10 Green Pipe St",
+    "PostCode": "28",
+    "Country": "USA",
+    "Phone": "078107",
+    "Fax":"078108"
+  },
+  {
+    "CustomerID": "C0010",
+    "CompanyName": "Nintendo",
+    "ContactName": "Luigi Mario",
+    "ContactTitle": "Run and Jumper",
+    "Address": "11 Green Pipe St",
+    "PostCode": "29",
+    "Country": "USA",
+    "Phone": "078109",
+    "Fax":"078110"
+  }
+]
