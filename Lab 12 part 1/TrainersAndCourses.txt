@@ -1,29 +1,16 @@
 
-COURSE TITLE
 
-Intro to Java
+fail
 
-Java Intermediate
+fail
 
-Java Advanced
+fail
 
-Intro to JUnit and TDD
+fail
 
-Intro to Selenium Web Driver
+fail
 
- TRAINER NAME
-
-John Johnstone
-
-Frank McDonald
-
-Suzie McBride
-
-Joe McCann
-
-Irene Blandhurst
-
-Iona MacLeod
+fail
 
 COURSE TITLE
 
@@ -38,86 +25,6 @@ Intro to JUnit and TDD
 Intro to Selenium Web Driver
 
  TRAINER NAME
-
-John Johnstone
-
-Frank McDonald
-
-Suzie McBride
-
-Joe McCann
-
-Irene Blandhurst
-
-Iona MacLeod
-
-COURSE TITLE
-
-Intro to Java
-
-Java Intermediate
-
-Java Advanced
-
-Intro to JUnit and TDD
-
-Intro to Selenium Web Driver
-
- TRAINER NAME
-
-John Johnstone
-
-Frank McDonald
-
-Suzie McBride
-
-Joe McCann
-
-Irene Blandhurst
-
-Iona MacLeod
-
-COURSE TITLE
-
-Intro to Java
-
-Java Intermediate
-
-Java Advanced
-
-Intro to JUnit and TDD
-
-Intro to Selenium Web Driver
-
- TRAINER NAME
-
-John Johnstone
-
-Frank McDonald
-
-Suzie McBride
-
-Joe McCann
-
-Irene Blandhurst
-
-Iona MacLeod
-
-COURSE TITLE
-
-Intro to Java
-
-Java Intermediate
-
-Java Advanced
-
-Intro to JUnit and TDD
-
-Intro to Selenium Web Driver
-
- TRAINER NAME
-
-John Johnstone
 
 Frank McDonald
 

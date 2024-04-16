@@ -6,7 +6,7 @@ import java.util.*;
 public class Program {
 
 	public static void main(String[] args)throws Exception {//main method throws Exception
-
+		try {
 		String[]courses = readCSV("Courses.txt"); //Declare String Array to hold course titles - call readCSV()
 		for(int i=0;i<courses.length;i++) {System.out.println(courses[i]);}//Prints out the Course Titles
 		System.out.println("\n");
@@ -15,15 +15,15 @@ public class Program {
 		System.out.println("\n");
 		writeCSV(courses);
 		writeCSV(trainers);
-		
+		}catch(Exception e) {System.out.println("Error" + e);}
 	}
 	
 	
 	//----------------------------------------------------------------------------------------------
 	private static String[] readCSV(String inFile)throws IOException{
+		try {
 		File file = new File(inFile);
-		try
-		(BufferedReader br = new BufferedReader(new FileReader(file))){
+		BufferedReader br = new BufferedReader(new FileReader(file));
 		String line;//will be used to read in one line at a time but the line will have comma separation!!!
 		List<String> results = new ArrayList<String>();//Can't use String[] as we don't no the size yet!!!
 				int column = 1; //Nb: column 1 works for both trainers and courses would be better as param
@@ -38,9 +38,12 @@ public class Program {
 		            response[i] = results.get(i);
 		        }
 		        return response;//Return the String Array
+		}catch(IOException e) {System.out.println("Error" + e);
+		 String[] error = new String[] {"fail"};
+		 return error;
 		}
-
 	}
+	
 	//-----------------------------------------------------------------------------------------------
 	private static void writeCSV(String[] arrayToPrint)throws IOException{ // pass in String array to be printed
 	 try {
