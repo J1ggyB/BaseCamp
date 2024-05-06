@@ -380,7 +380,7 @@ public class Motorway extends Canvas {
 				}
 
 			}
-		if(count >2) {tt.cancel();} // stop the timer after 2 collisions ie: The motorway is blocked
+		if(count >6) {tt.cancel();} // stop the timer after 2 collisions ie: The motorway is blocked
 		
 		this.repaint(); //repaint the frame
 		}

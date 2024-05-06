@@ -4,7 +4,7 @@ package com.J1ggy;
 import java.util.Random;
 
 public class Vehicle {
-	public int id, x, y, w, h, lane, motion =1;
+	public int id, x, y, w, h, lane, correctLane, motion =1;
 	public int speed;
 	private VEHICLE_TYPE vehicleType; 
 	//------------------------------------------------
@@ -55,8 +55,8 @@ public class Vehicle {
 	//Change Lane Left---------------------------------------
 	public void changeLaneR() {
 		if((y+110)<300) {
-		y=y+110;
-		lane = lane-1;
+			y = y + 110;
+			lane = lane+ 1;
 		}
 	}
 
@@ -64,7 +64,7 @@ public class Vehicle {
 	public void changeLaneL() {
 		if ((y-110) > 0) {
 			y=y-110;
-			lane = lane +1;
+			lane = lane -1;
 		}
 }
 //Get Front position vehicle	
@@ -73,8 +73,12 @@ public class Vehicle {
 		return front;
 	}
 //Get lane of his vehicle
-	public int getLane(Vehicle v) {
+	public int getLane() {
 		return this.lane;
+	}
+// What lane should vehicle be in
+	public int getCorrectLane() {
+		return this.correctLane;
 	}
 //Get x
 	public int getX() {
@@ -89,7 +93,7 @@ public class Vehicle {
 		return speed;
 		}
 //Check for collision	
-	public boolean checkCollision(Vehicle v, int x, int y, int width, int h) {
+	public boolean checkCollision(Vehicle v, int x, int y, int w, int h) {
 		for (int i = 0 ; i < 5; i++) {
 			Vehicle me = this;
 			if(v.lane == me.lane) { // If we "Are" in the same lane
