@@ -84,6 +84,8 @@ public class Program {
 		
 		// Task 6 decrement by 1 the value of number
 		System.out.println("\n6. After decrementing once: " + --number);
+		System.out.println("\n6. After decrementing once: " + --number);
+		System.out.println("\n6. After decrementing once: " + number++);
 		// The --number decrements before printing (+ is still concatenating Strings)
 		
 		// Task 7 put the remainder when dividing by 3 into 'remainder'

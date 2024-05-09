@@ -15,9 +15,9 @@ package lab01;// The package is a place to group related classes (ie: code struc
 public class Program {  /* Every program needs a class with a main method 
 	this is where execution starts */
 	
-	// Note the class name "Main" in this case is capitalised
+	// Note the class name "Program" in this case is capitalised
 	
-	// The "main()" method (a method of the class Main) is lower case
+	// The "main()" method (a method of the class Program is lower case
 	
 	//public - Means that the method is accessible (or visible) by all other classes
 	

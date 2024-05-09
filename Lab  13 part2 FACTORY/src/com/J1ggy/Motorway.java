@@ -78,7 +78,7 @@ public class Motorway {
 							frmMotorwayMadness.setSize(new Dimension(1600, 750)); 
 							} catch (Exception e) {e.printStackTrace();}
 						
-					      	timer = new Timer(30,new ActionListener(){
+					      	timer = new Timer(80,new ActionListener(){
 					          public void actionPerformed(ActionEvent e)
 					      {
 					         Motorway.draw();
