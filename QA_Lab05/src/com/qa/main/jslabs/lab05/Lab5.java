@@ -3,6 +3,7 @@ package com.qa.main.jslabs.lab05;
 import java.util.Scanner;
 
 public class Lab5 {
+	Scanner s = new Scanner(System.in);
 	public void grades() {
 		String inputMark = getString("Enter a grade mark between 1..100 (integer): ");
 		Integer mark = tryParseInt(inputMark);
@@ -27,12 +28,10 @@ public class Lab5 {
 		else if (mark >= 50 && mark <= 60) {
 			System.out.printf(resultText, "Pass");
 		}
-		else if (mark >= 61 && mark <= 70) {
-			System.out.printf(resultText, "Merit");
-		}
 		else {
 			System.out.printf(resultText, "Fail");
 		}
+		s.close();
 	}
 	
 	public void part2() {
@@ -75,7 +74,7 @@ public class Lab5 {
 		System.out.println("Contact friends");
 	}
 	
-	// Copied this from the interweb
+
 	public Integer tryParseInt(String text) {
 		try {
 			return Integer.parseInt(text);
@@ -86,14 +85,14 @@ public class Lab5 {
 	
 	public int getInt(String prompt) {
 		System.out.println(prompt);
-		Scanner s = new Scanner(System.in);
-		return s.nextInt();
+		int rtn = s.nextInt();
+		return rtn;
 	}
 	
 	public String getString(String prompt ) {
 		System.out.println(prompt);
-		Scanner s = new Scanner(System.in);
-		return s.nextLine();
+		String retn = s.nextLine();
+		return retn;
 	}
 
 
