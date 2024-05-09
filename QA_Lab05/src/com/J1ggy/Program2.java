@@ -1,4 +1,4 @@
-package com.qa.main.jslabs.lab05;
+package com.J1ggy;
 
 //import com.qa.main.jslabs.lab04.Lab4;
 

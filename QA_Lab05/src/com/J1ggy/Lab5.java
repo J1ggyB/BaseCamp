@@ -1,26 +1,26 @@
-package com.qa.main.jslabs.lab05;
+package com.J1ggy;
 
 import java.util.Scanner;
 
 public class Lab5 {
 	Scanner s = new Scanner(System.in);
 	public void grades() {
-		String inputMark = getString("Enter a grade mark between 1..100 (integer): ");
-		Integer mark = tryParseInt(inputMark);
+		String inputMark = getString("Enter a grade mark between 1..100 (integer): "); //Calls getString() with user prompt assigns to inputMark
+		Integer mark = tryParseInt(inputMark); //Calls tryParseInt with inputMark to check user input is an integer
 		
 		// Check input is valid
-		if (mark == null) {
-			System.out.println("Error: Value must be an integer");
+		if (mark == null) {         // Check the mark is not null 
+			System.out.println("Error: Value must be an integer");//- report is input is bad
 			return;
-		} else if (!(mark > 0 && mark <= 100)) {
+		} else if (!(mark > 0 && mark <= 100)) {// Check the mark is not 0 
 			System.out.println("Error: marks must be between 1..100");
 			return;
 		}
 		
-		String resultText = "Grade is: %s";
+		String resultText = "Grade is: %s"; //Create the common part of the answer with a placeholder for the variable - as a String
 		// Get result
-		if (mark >= 71) {
-			System.out.printf(resultText, "Distinction");
+		if (mark >= 71) {										//Check marks and print suitable answer by replacing placeholder
+			System.out.printf(resultText, "Distinction");  
 		}
 		else if (mark >= 61 && mark <= 70) {
 			System.out.printf(resultText, "Merit");
@@ -35,12 +35,12 @@ public class Lab5 {
 	}
 	
 	public void part2() {
-		String inputSummer = getString("Is it Summer time (type 'yes' for true)? ");
-		Boolean summer = (inputSummer.equalsIgnoreCase("yes")) ? true : false;
-		String inputEvening = getString("Is it early evening (type 'yes' for true)? ");
-		Boolean evening = (inputEvening.equalsIgnoreCase("yes")) ? true : false;
+		String inputSummer = getString("Is it Summer time (type 'yes' for true)? "); //Calls getString() with user prompt assigns to inputSummer
+		Boolean summer = (inputSummer.equalsIgnoreCase("yes")) ? true : false;       // Assign Boolean Summer based on value of inputSummer
+		String inputEvening = getString("Is it early evening (type 'yes' for true)? "); //Calls getString() with user prompt assigns to inputEvening
+		Boolean evening = (inputEvening.equalsIgnoreCase("yes")) ? true : false;   // // Assign Boolean evening based on value of inputEvening
 
-		System.out.println("Take a shower");
+		System.out.println("Take a shower");  //print
 		// Straight forward way
 //		if(summer) {
 //			if(evening) {
@@ -60,18 +60,18 @@ public class Lab5 {
 //		}
 		
 		// Concise way
-		if(summer && evening) {
+		if(summer && evening) {   // if summer and evening variables are both true
 			System.out.println("Eat outside");
 		} else {
 			System.out.println("Eat inside");
 		}
-		if(summer) {
+		if(summer) {                      //if just summer is true
 			System.out.println("Do outdoors hobby");
 		} else if(evening) {
 			System.out.println("Take a walk");
 		}
 			
-		System.out.println("Contact friends");
+		System.out.println("Contact friends"); //print
 	}
 	
 
