@@ -75,7 +75,7 @@ public class Lab5 {
 	}
 	
 
-	public Integer tryParseInt(String text) {
+	public Integer tryParseInt(String text) { //Checks String (User input) can be converted to an integer
 		try {
 			return Integer.parseInt(text);
 		} catch (NumberFormatException e) {
@@ -83,13 +83,13 @@ public class Lab5 {
 		}
 	}
 	
-	public int getInt(String prompt) {
+	public int getInt(String prompt) { //Sends a prompt to user and returns an int (their response)
 		System.out.println(prompt);
 		int rtn = s.nextInt();
 		return rtn;
 	}
 	
-	public String getString(String prompt ) {
+	public String getString(String prompt ) {  //Sends a prompt to user and returns a String (their response)
 		System.out.println(prompt);
 		String retn = s.nextLine();
 		return retn;
