@@ -3,6 +3,7 @@ package com.qa.main.jslabs.lab06;
 import java.util.Scanner;
 
 public class Lab6 {
+	
 	public void part1() {
 		grades();   // Calls method grades()
 	}
