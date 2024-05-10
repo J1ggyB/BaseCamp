@@ -23,5 +23,20 @@ public class NestedFor {
         }
         System.out.println("\n\t\tExample:");
         System.out.println("\t\tThe value of Column 3 Row 3 is:"+ myArray[4][3]);  //Count it out as 0-3 Rows and 0-3 Columns (Rows First)
+        
+        //New Exercise:
+        System.out.println("\n\nTHE ARRAY QUIZ: ");
+        int i = 0;
+        int j = 0;
+        for(i = 0; i <3; i++) {
+        	System.out.println("OuterLoop " + i);
+        	for(j =0; j<5; j++) {
+        		System.out.println("InnerLoop "+ j);
+        	}
+        	System.out.println("Exited InnerLoop i equals: " + i + " j equals: " + j );
+        }
+        System.out.println("Exited OuterLoop i equals: " + i + " j equals: " + j );
+        System.out.println("i*j " + ((i-1)*(j-1)));
+        System.out.println("Actually after exiting the final time i*j equals: " + (i*j));
     }
-}
+} 
