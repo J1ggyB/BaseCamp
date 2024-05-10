@@ -48,9 +48,6 @@ public class Lab6 {
 			else if (marks[i] >= 50 && marks[i] <= 60) {
 				System.out.printf(resultText, i, "Pass");
 			}
-			else if (marks[i] >= 61 && marks[i] <= 70) {
-				System.out.printf(resultText, i, "Merit");
-			}
 			else {
 				System.out.printf(resultText, i, "Fail");
 			}
