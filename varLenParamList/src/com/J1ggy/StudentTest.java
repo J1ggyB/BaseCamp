@@ -1,5 +1,6 @@
 package com.J1ggy;
-
+//JUST TO SHOW THAT YOU CAN OVERRIDE THE DEFAULT toString() method that every object inherits from "Object"
+//WHY??? -- It can make things clearer for other programmers and log files
 public class StudentTest {
 private int ID;
 private String Name;
