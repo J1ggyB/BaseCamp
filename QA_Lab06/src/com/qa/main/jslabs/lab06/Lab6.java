@@ -85,25 +85,25 @@ public class Lab6 {
 		}
 	}
 	
-	// Copied this from the interweb
-	public Integer tryParseInt(String text) {
-		try {
-			return Integer.parseInt(text);
-		} catch (NumberFormatException e) {
+
+	public Integer tryParseInt(String text) { //method parses input string to an int
+		try {                                 //exception handling - try something
+			return Integer.parseInt(text); //Do the parse
+		} catch (NumberFormatException e) { // catch any error
 			return null;
 		}
 	}
 	
-	public int getInt(String prompt) {
-		System.out.println(prompt);
-		Scanner s = new Scanner(System.in);
-		return s.nextInt();
+	public int getInt(String prompt) { // Prompts the user with the input String
+		System.out.println(prompt); //prints String prompt to screen
+		Scanner s = new Scanner(System.in); //creates a Scanner
+		return s.nextInt(); //Scans in the next int and returns it as result
 	}
 	
-	public String getString(String prompt ) {
-		System.out.println(prompt);
-		Scanner s = new Scanner(System.in);
-		return s.nextLine();
+	public String getString(String prompt ) { //Prompts the user for a String that is the input String we passed in
+		System.out.println(prompt);				//print the prompt to screen
+		Scanner s = new Scanner(System.in);		//create a new Scanner
+		return s.nextLine();					//read in and return the user input as a String
 	}
 
 }
