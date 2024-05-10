@@ -57,31 +57,31 @@ public class Lab6 {
 		}
 	}
 
-	private void account() {
-		// TODO Auto-generated method stub
-		float initalAmount = 100;
-		float targetAmount = 200;
-		float interestRate = 0.05f;
-		float currentAmount = initalAmount;
-		int year = 1;
+	private void account() { //method account() adds interest to initialAmount each year until it hits targetAmount
+
+		float initalAmount = 100;  // float to hold initial amount
+		float targetAmount = 200;  //float to hold target
+		float interestRate = 0.05f; // float to hold interest rate
+		float currentAmount = initalAmount; //float currentAmount will be increased each year but is initialised to initialAmount
+		int year = 1;  //int year holds the year number
 		
-		while (currentAmount < targetAmount) {
-			currentAmount = currentAmount + (currentAmount * interestRate);
-			System.out.printf("Year %d: £%f\n", year, currentAmount);
+		while (currentAmount < targetAmount) {  //Condition for loop end
+			currentAmount = currentAmount + (currentAmount * interestRate); // while looping add the interest to current amount
+			System.out.printf("Year %d: £%f\n", year, currentAmount); //print out the interest for each year
 			year++;
 		}
 		
 	}
 
-	public void multiplicationTable() {
-		int[] col = {1,2,3,4,5,6,7,8,9,10};
-		int[] row = {1,2,3,4,5,6,7,8,9,10};
+	public void multiplicationTable() { //create multiplication table
+		int[] col = {1,2,3,4,5,6,7,8,9,10}; //Array col holding 10 ints
+		int[] row = {1,2,3,4,5,6,7,8,9,10}; //Array row holding 10 ints
 		
-		for (int i = 0; i < col.length; i++) {
-			for (int j = 0; j < row.length; j++) {
-				System.out.printf("%5d", col[i] * row[j]);
+		for (int i = 0; i < col.length; i++) { //iterate columns
+			for (int j = 0; j < row.length; j++) { // for each column iterate rows
+				System.out.printf("%5d", col[i] * row[j]); //print out the column times the row
 			}
-			System.out.println();
+			System.out.println();// outputs a new line
 		}
 	}
 	
