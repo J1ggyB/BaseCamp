@@ -4,15 +4,15 @@ public class Program {
 
 	public static void main(String[] args) {
 		// Lab 8 part 1
-		Account account1 = new Account(1, "Jas", 0);
-		System.out.println("Account: " + account1.getId());
-		System.out.println();
-		account1.Deposit(100);
-		account1.Withdraw(50);
-		account1.getDetails();
+		Account account1 = new Account(1, "Jas", 0); //Creates Account ID 1 for Jas with 0 balance 
+		System.out.println("Account: " + account1.getId()); // print Account 1
+		System.out.println(); //prints a newline
+		account1.Deposit(100); //Deposit
+		account1.Withdraw(50); //Withdraw
+		account1.getDetails();  //check Balance
 		
 		// Lab 8 part 2
-		Account myAccount = new Account(2, "John", 100);
+		Account myAccount = new Account(2, "John", 100); //rinse and repeat - This time add some interest
 		System.out.println("Account: " + myAccount.getId());
 		System.out.println();
 		myAccount.addInterest();
@@ -37,12 +37,13 @@ public class Program {
 		System.out.println();
 	}
 
-	public static void processAccount(Account acc) {
+	public static void processAccount(Account acc) {  // static method applies to the Class
 		acc.addInterest();
 	}
 	
-	private static void incInt(int x) {
+	private static void incInt(int x) { 
 		x++;
+		System.out.println(x);
 		}
 
 }
