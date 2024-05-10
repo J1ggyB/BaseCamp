@@ -18,7 +18,7 @@ public class NestedFor {
         System.out.println("\t\t--------------------------------------------------" + "\tYEAH BABY!!!");
         for (int i = 0; i < myArray.length; i++) {//This is the number of Rows
             for (int j = 0; j < myArray[i].length; j++) {//This is running the rows for each column ie: myArray[i] is the columns
-            	//System.out.println("\n");
+            	//The Rows are the comma separated bracketed arrays, The columns are "What is inside each set of brackets ie: the comma separated items in each array
                 System.out.print(myArray[i][j]);//[Rows][columns]     Notice: Rows is the first set of brackets
             }
          System.out.println("\n\n\t\t--------------------------------------------------");
