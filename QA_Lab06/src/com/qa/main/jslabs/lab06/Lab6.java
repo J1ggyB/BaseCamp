@@ -3,7 +3,7 @@ package com.qa.main.jslabs.lab06;
 import java.util.Scanner;
 
 public class Lab6 {
-	
+	public static Scanner s = new Scanner(System.in);	
 	public void part1() {
 		grades();   // Calls method grades()
 	}
@@ -28,8 +28,10 @@ public class Lab6 {
 				// Check input is valid.
 				if (mark == null) {
 					System.out.println("Error: Value must be an integer. Try again.");//Error if mark null
+					s.close();
 				} else if (!(mark > 0 && mark <= 100)) {
 					System.out.println("Error: marks must be between 1..100. Try again.");// Error if mark not between 0..100
+					s.close();
 				} else {
 					marks[i] = mark; // Add the mark to the array if it is a valid int between 0..100
 					break;
@@ -53,6 +55,7 @@ public class Lab6 {
 				System.out.printf(resultText, i, "Fail");
 			}
 		}
+		s.close();
 	}
 
 	private void account() { //method account() adds interest to initialAmount each year until it hits targetAmount
@@ -94,14 +97,14 @@ public class Lab6 {
 	
 	public int getInt(String prompt) { // Prompts the user with the input String
 		System.out.println(prompt); //prints String prompt to screen
-		Scanner s = new Scanner(System.in); //creates a Scanner
-		return s.nextInt(); //Scans in the next int and returns it as result
+		int rtn = s.nextInt(); //Get next int from Scanner s
+		return rtn; //Scans in the next int and returns it as result
 	}
 	
 	public String getString(String prompt ) { //Prompts the user for a String that is the input String we passed in
 		System.out.println(prompt);				//print the prompt to screen
-		Scanner s = new Scanner(System.in);		//create a new Scanner
-		return s.nextLine();					//read in and return the user input as a String
+		String retn = s.nextLine();//grab from Scanner s new Scanner
+		return 	retn;				//read in and return the user input as a String
 	}
 
 }
