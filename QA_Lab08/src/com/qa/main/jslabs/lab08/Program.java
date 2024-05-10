@@ -18,21 +18,21 @@ public class Program {
 		myAccount.addInterest();
 		myAccount.getDetails();
 		
-		// Refers to the same account. Memory address value is passed in
+		// Refers to the same account. Memory address value is passed in - creates a second reference to the same object on the heap (reference is on stack)
 		Account partnerAccount = myAccount;
 		partnerAccount.addInterest();
 		partnerAccount.getDetails();
 		
 		//Memory address value is passed in
-		Account myAccount2 = new Account(3, "Luis", 100);
-		System.out.println("Account: " + myAccount2.getId());
+		Account myAccount2 = new Account(3, "Luis", 100); //new creates a new instance of the class on the heap and returns the address
+		System.out.println("Account: " + myAccount2.getId()); // returns the value found at the address of Account2 ID
 		System.out.println();
 		processAccount(myAccount2);
 		myAccount2.getDetails();
 		
-		//The value (100) is passed in
+		//The value (100) is passed in ie: value placed on the stack
 		int k=100;
-		incInt(k);
+		incInt(k); //k is on the stack so is passed by value
 		System.out.println("incInt(k): " + k);
 		System.out.println();
 	}
@@ -41,9 +41,9 @@ public class Program {
 		acc.addInterest();
 	}
 	
-	private static void incInt(int x) { 
+	private static void incInt(int x) { //x passed by value
 		x++;
-		System.out.println(x);
+		System.out.println("does not affect variable k" +x);
 		}
 
 }
