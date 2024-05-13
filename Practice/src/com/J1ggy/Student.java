@@ -3,7 +3,7 @@ package com.J1ggy;
 
 //I am the University of HipHop
 
-public class Student {
+public class Student implements StudentInterface {
 	private static String University;
 	private int ID;
 	private String fName;
@@ -31,7 +31,11 @@ public class Student {
 			this.lName = lName;
 			this.course = course;
 		}
-	
+	public String getStudentState(Student s) {
+		String response = getUni() +" " + this.getID() + " " + this.getfName() + "" + this.getlName() + " "
+				+ this.getCourse();
+		return response;
+	}
 	public  static void setUni() {
 		University = "University of HipHop";
 	}
