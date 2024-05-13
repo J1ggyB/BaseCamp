@@ -38,3 +38,5 @@ void setCourse(String Course);
 //responsibleBody, University, ID, fName, lName and Course
 //We can see the variable types ie: int ID, String fName
 //We have our method signatures showing return types and parameters etc
+
+// A Class can extend as many interfaces as you like
