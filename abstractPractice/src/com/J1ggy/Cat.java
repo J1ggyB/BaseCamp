@@ -16,10 +16,10 @@ public class Cat extends Animal{
 		String str = "The cat is prowling!"; //Implements the abstract method move() inherited from Animal
 		return str;
 	}
-	public class Bird extends Animal{// An Inner Class
+	public class Bird extends Animal{// An Inner Class ie: The Bird class is inside the Cat class
 		
-		public Bird() {
-			super();
+		public Bird() { // Constructor inherits from Animal
+			super(); //Call parent Constructor
 			System.out.println("\nThis is the Inner Class");
 			System.out.println("Eweh it's disgusting in here!");
 		}

@@ -16,9 +16,9 @@ public class Program {
  System.out.println("What is Felix doing? " + whatsFelixUpTo);
  Felix.sleep();
  System.out.print("Well maybe not!");
- Cat.Bird Tweety = Felix.new Bird();
- Tweety.makeNoise();
- Tweety.move();
- Tweety.sleep();
+ Cat.Bird Tweety = Felix.new Bird(); // Create an instance of the InnerClass Bird and assign it to Felix
+ Tweety.makeNoise(); // Calling methods of the InnerClass
+ Tweety.move();// Calling methods of the InnerClass
+ Tweety.sleep();// Calling methods of the InnerClass
 	}
 }
