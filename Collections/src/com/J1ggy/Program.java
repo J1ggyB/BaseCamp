@@ -1,5 +1,6 @@
 package com.J1ggy;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -10,6 +11,7 @@ public class Program {
 
 	public static void main(String[] args) {
 		// ArrayList------------------------------------------------------------
+		//Think of it as a mutable Array of objects - If we want primitives we must use Wrapper classes
 		List <String> myList = new ArrayList<>();
 		myList.add("Bob");
 		myList.add("Rob");
@@ -23,6 +25,7 @@ public class Program {
 		System.out.println("----------------------------------");
 		// Linked List-------------------------------------------------------------
 		//A LinkedList is a list of containers where each one holds a link to the next and the list has a link to the first.
+		//Can be used when addition rate is much higher than retrieve - often used for a queue.
 		LinkedList <String> names = new LinkedList<>();
 		names.add("Sarah");
 		names.add("Sally");
@@ -37,6 +40,7 @@ public class Program {
 		//-----------------------------------------------------------------------------------------
 		System.out.println("-----------------------------------------------");
 		// HashMap---------------------------------------------------------------------------------
+		//A HashMap is basically a Dictionary it holds key value pairs 
 		HashMap<String, String> myHMap = new HashMap<>();
 		myHMap.put("Scotland", "Edinburgh");
 		myHMap.put("Ireland", "Dublin");
@@ -58,6 +62,7 @@ public class Program {
 		//-------------------------------------------------------------------------------------------
 		System.out.println("------------------------------------------------");
 		// HashSet----------------------------------------------------------------------------------
+		//The main purpose is to avoid duplication
 		HashSet<String> bikes = new HashSet<>();
 		bikes.add("Triumph");
 		bikes.add("Ducatti");
@@ -69,6 +74,29 @@ public class Program {
 		System.out.println(bikes.contains("Triumph"));
 		for(String b : bikes) {
 			System.out.println(b);
+		}
+		//--------------------------------------------------------------------------------------------
+		System.out.println("--------------------------------------------------------");
+		//--------------------------------------------------------------------------------------------
+		//ArrayDeque
+		ArrayDeque<String> myQueue = new ArrayDeque<>();
+		myQueue.add("Duncan");
+		myQueue.add("Dave");
+		myQueue.add("Deardrie");
+		myQueue.add("Diane");
+		myQueue.add("William");
+		while(!myQueue.isEmpty()) {
+			String name = myQueue.pop();
+			System.out.println(name);
+		}
+        System.out.println(myQueue);
+		myQueue.add("Duncan");
+		myQueue.add("Dave");
+		myQueue.add("Deardrie");
+		myQueue.add("Diane");
+		myQueue.add("William");
+		for(String nmes : myQueue) {
+			System.out.println(nmes);
 		}
 	}
 

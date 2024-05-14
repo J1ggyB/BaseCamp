@@ -22,7 +22,7 @@ String s = "";						//We will use this to build a new String called s
     System.out.println(s.indexOf('b') + " - Additional chars are from the tabs"); //print index of first occurrence of b (count tabs)
     if(s.indexOf('z') == -1) {										//indexOf() throws -1 if char not found
     System.out.println("Character does not appear in the String");  //Notify user that char not found
-    s = s.replaceAll("\\s","").substring(0,6)+ " Blackberry";     //Uses REG Expression to get rid of whitespace/substrings/Appends
+    s = s.replaceAll("\t","").substring(0,6)+ "";     //Uses REG Expression to get rid of whitespace/substrings/Appends
     System.out.println("My new Full Name is: " + s);                //Print out the new Full Name
     }
 	}
