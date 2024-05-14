@@ -1,6 +1,6 @@
 package com.J1ggy;
 
-import java.util.ArrayDeque;
+import java.util.ArrayDeque;                                                                      // ******* more common
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -10,9 +10,9 @@ import java.util.List;
 public class Program {
 
 	public static void main(String[] args) {
-		// ArrayList------------------------------------------------------------
+		// ArrayList------------------------------------------------------------NOT THAT FAST                      ******
 		//Think of it as a mutable Array of objects - If we want primitives we must use Wrapper classes
-		List <String> myList = new ArrayList<>();
+		ArrayList <String> myList = new ArrayList<>();
 		myList.add("Bob");
 		myList.add("Rob");
 		myList.add("Billy");
@@ -23,7 +23,7 @@ public class Program {
 		System.out.println("Why should it be Rob");
 		//--------------------------------------------------------------------------
 		System.out.println("----------------------------------");
-		// Linked List-------------------------------------------------------------
+		// Linked List-------------------------------------------------------------SLOW
 		//A LinkedList is a list of containers where each one holds a link to the next and the list has a link to the first.
 		//Can be used when addition rate is much higher than retrieve - often used for a queue.
 		LinkedList <String> names = new LinkedList<>();
@@ -39,8 +39,8 @@ public class Program {
 		System.out.println(str);
 		//-----------------------------------------------------------------------------------------
 		System.out.println("-----------------------------------------------");
-		// HashMap---------------------------------------------------------------------------------
-		//A HashMap is basically a Dictionary it holds key value pairs 
+		// HashMap---------------------------------------------------------------------------------     ******
+		//A HashMap is basically a Dictionary it holds key value pairs (Forget about indexes)
 		HashMap<String, String> myHMap = new HashMap<>();
 		myHMap.put("Scotland", "Edinburgh");
 		myHMap.put("Ireland", "Dublin");
@@ -61,7 +61,7 @@ public class Program {
 		}
 		//-------------------------------------------------------------------------------------------
 		System.out.println("------------------------------------------------");
-		// HashSet----------------------------------------------------------------------------------
+		// HashSet----------------------------------------------------------------------------------          *******
 		//The main purpose is to avoid duplication
 		HashSet<String> bikes = new HashSet<>();
 		bikes.add("Triumph");
@@ -85,6 +85,7 @@ public class Program {
 		myQueue.add("Deardrie");
 		myQueue.add("Diane");
 		myQueue.add("William");
+		System.out.println(myQueue);
 		while(!myQueue.isEmpty()) {
 			String name = myQueue.pop();
 			System.out.println(name);
