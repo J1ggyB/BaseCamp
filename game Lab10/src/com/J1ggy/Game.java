@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.Timer;
 import javax.swing.*;
 
-public class Game extends Canvas { 
+public class Game extends Canvas{ 
 //Canvas is a subclass of Java Component interface
 	//A component is an object having a graphical representation that can be displayed on the screen
 	// create an array of 3 balls 
@@ -17,6 +17,7 @@ public class Game extends Canvas {
 	Shape shape3 = new Shape(50,700,70,70, SHAPE_TYPE.OVAL);
 	Shape shape4 = new Shape(700,600,70,70, SHAPE_TYPE.ARC);
 	Shape shape5 = new Shape(350,350,70,70, SHAPE_TYPE.RECTANGLE);
+	
 	public static void main(String[] args) {//Execute the program
 	      Game myGame = new Game();//Create an instance of the Game class
 		}
@@ -40,7 +41,7 @@ draw();
 }
 };
 
-t.schedule(tt, 0, 20);// Syntax: public void schedule(TimerTask task, first execution, repeat schedule)in milliseconds 
+t.schedule(tt, 0, 50);// Syntax: public void schedule(TimerTask task, first execution, repeat schedule)in milliseconds 
 
 		
 frame.addWindowListener(new WindowAdapter() {// Listeners for Window tasks ie:close
@@ -68,7 +69,7 @@ Graphics2D g2d = (Graphics2D) g;//Offers more options than Graphics class
 g2d.setPaint(Color.DARK_GRAY);//Set properties for Rectangle
 g2d.fillRect(0, 0, Shape.worldW, Shape.worldH);
 GradientPaint btom = new GradientPaint(0,0,Color.BLUE,800, 800,Color.MAGENTA);
-GradientPaint gtoo = new GradientPaint(0,0,Color.GREEN,800, 00,Color.ORANGE);
+GradientPaint gtoo = new GradientPaint(0,0,Color.GREEN,800, 800,Color.ORANGE);
 GradientPaint otor = new GradientPaint(0,0,Color.ORANGE,800, 800,Color.RED);
 GradientPaint rtop = new GradientPaint(0,0,Color.RED,800, 800,Color.PINK);
 GradientPaint blktolg = new GradientPaint(0,0,Color.BLACK,400, 400,Color.LIGHT_GRAY);
