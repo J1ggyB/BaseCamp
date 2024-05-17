@@ -57,7 +57,7 @@ public class Motorway {
 
 	public static void main(String[] args) {
 		 RegListGenerator regList = new  RegListGenerator();
-		 int num = 10;//try 60  ???????  SETS THE NUM OF REG PLATES TO BE CREATED
+		 int num = 60;//try 60  ???????  SETS THE NUM OF REG PLATES TO BE CREATED
 		 try {
 			 regList.createRegNos(num);
 			 for(int i = 0 ; i < num ; i++ ) {
