@@ -1,0 +1,51 @@
+[
+  {
+    "id": "0001",
+    "name": "Chicken Fried Rice",
+    "price": "£5.45",
+    "description": "Chicken cooked with a variety of vegetables, egg,spring onion & soya sauce can be served dry or with gravy",
+    "recommendations": "Popular with Prawn Crackers or Spring rolls"
+  },
+  {
+     "id": "0002",
+    "name": "Pork Fried Rice",
+    "price": "£5.45",
+    "description": "Pork cooked with a variety of vegetables, egg,spring onion & soya sauce can be served dry or with gravy",
+    "recommendations": "Popular with Prawn Crackers or Spring rolls"
+  },
+  {
+    "id": "0003",
+    "name": "Beef Fried Rice",
+     "price": "£5.95",
+    "description": "Beef cooked with a variety of vegetables, egg,spring onion & soya sauce can be served dry or with gravy",
+    "recommendations": "Popular with Prawn Crackers or Spring rolls"
+  },
+  {
+    "id": "0004",
+    "name": "Mixed Fried Rice",
+    "price": "£6.95",
+    "description": "A mix of Chicken, King Prawn, Beef & Pork cooked with a variety of vegetables, egg,spring onion & soya sauce can be served dry or with gravy",
+    "recommendations": "Popular with Prawn Crackers or Spring rolls"
+  },
+  {
+    "id": "0005",
+    "name": "Sweet n'Sour Chicken with Fried or Boiled Rice",
+    "price": "£5.95",
+    "description": "Chicken cooked with a variety of vegetables in a Sweet n'Sour sauce can be served as battered pieces or Hong Kong style",
+    "recommendations": "Popular with Spring rolls or Prawn Toast"
+  },
+  {
+    "id": "0006",
+    "name": "Sweet n'Sour Pork with Fried or Boiled Rice",
+    "price": "£5.95",
+    "description": "Pork cooked with a variety of vegetables in a Sweet n'Sour sauce can be served as battered pieces or Hong Kong style",
+    "recommendations": "Popular with Spring rolls or Prawn Toast"
+  },
+  {
+    "id": "0007",
+    "name": "Sweet n'Sour King Prawn with Fried or Boiled Rice",
+    "price": "£6.95",
+    "description": "King Prawns cooked with a variety of vegetables in a Sweet n'Sour sauce can be served as battered pieces or Hong Kong style",
+    "recommendations": "Popular with Spring rolls or Prawn Toast"
+  }
+]
