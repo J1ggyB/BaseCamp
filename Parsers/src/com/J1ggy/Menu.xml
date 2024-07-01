@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Burgers_R_Us>
+	<menuItem id = "1">
+		<name>Cheese_R_Us</name>
+		<price>£4.95</price>
+		<mealPrice>£6.95</mealPrice>
+		<calories>350</calories>
+		<mealCalories>550</mealCalories>
+    		<description>	Famous Cheese_R_Us quarter pounder with cheese, pickle and Tomato Sauce, mustard in a sesame bun. Meal includes fries, salad and choice of drink.</description>
+   	</menuItem >
+   	<menuItem id = "2">
+   		<name>Cheese_and_bacon_R_Us</name>
+		<price>£4.95</price>
+		<mealPrice>£6.95</mealPrice>
+		<calories>360</calories>
+		<mealCalories>560</mealCalories>
+    		<description>
+   		Delicious Cheese_and_bacon_R_Us quarter pounder with cheese, bacon pickle and Tomato Sauce, mustard in a sesame bun. Meal includes fries, salad and choice of drink.
+   		</description>
+   	</menuItem >
+   		<menuItem id = "3">
+		<name>Chicken_R_Us</name>
+		<price>£4.95</price>
+		<mealPrice>£6.95</mealPrice>
+		<calories>250</calories>
+		<mealCalories>250</mealCalories>
+    		<description>
+   		Famous Chicken_R_Us quarter pounder with cheese, salad and Mayo in a sesame bun. Meal includes fries, salad and choice of drink.
+   		</description>
+   	</menuItem >
+</Burgers_R_Us>

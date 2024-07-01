@@ -1,0 +1,51 @@
+[
+  {
+    "MenuItem": "0001",
+    "ItemName": "Chicken Fried Rice",
+    "Description": "Chicken cooked with a variety of vegetables, egg,spring onion & soya sauce can be served dry or with gravy",
+    "Price": "£5.45",
+    "Recommendations": "Popular with Prawn Crackers or Spring rolls"
+  },
+  {
+      "MenuItem": "0002",
+    "ItemName": "Pork Fried Rice",
+    "Description": "Pork cooked with a variety of vegetables, egg,spring onion & soya sauce can be served dry or with gravy",
+    "Price": "£5.45",
+    "Recommendations": "Popular with Prawn Crackers or Spring rolls"
+  },
+  {
+    "MenuItem": "0003",
+    "ItemName": "Beef Fried Rice",
+    "Description": "Beef cooked with a variety of vegetables, egg,spring onion & soya sauce can be served dry or with gravy",
+    "Price": "£5.95",
+    "Recommendations": "Popular with Prawn Crackers or Spring rolls"
+  },
+  {
+    "MenuItem": "0004",
+    "ItemName": "Mixed Fried Rice",
+    "Description": "A mix of Chicken, King Prawn, Beef & Pork cooked with a variety of vegetables, egg,spring onion & soya sauce can be served dry or with gravy",
+    "Price": "£6.95",
+    "Recommendations": "Popular with Prawn Crackers or Spring rolls"
+  },
+  {
+    "MenuItem": "0005",
+    "ItemName": "Sweet n'Sour Chicken with Fried or Boiled Rice",
+    "Description": "Chicken cooked with a variety of vegetables in a Sweet n'Sour sauce can be served as battered pieces or Hong Kong style",
+    "Price": "£5.95",
+    "Recommendations": "Popular with Spring rolls or Prawn Toast"
+  },
+  {
+    "MenuItem": "0006",
+    "ItemName": "Sweet n'Sour Pork with Fried or Boiled Rice",
+    "Description": "Pork cooked with a variety of vegetables in a Sweet n'Sour sauce can be served as battered pieces or Hong Kong style",
+    "Price": "£5.95",
+    "Recommendations": "Popular with Spring rolls or Prawn Toast"
+  },
+  {
+    "MenuItem": "0007",
+    "ItemName": "Sweet n'Sour King Prawn with Fried or Boiled Rice",
+    "Description": "King Prawns cooked with a variety of vegetables in a Sweet n'Sour sauce can be served as battered pieces or Hong Kong style",
+    "Price": "£6.95",
+    "Recommendations": "Popular with Spring rolls or Prawn Toast"
+  }
+]
