@@ -31,8 +31,8 @@ public class Shape {
 		this.y = y;
 		this.w = w;
 		this.h = h;
-		this.dirX = 1;
-		this.dirY = 1;
+		this.dirX = 10;
+		this.dirY = 10;
 		this.shapeType = shapeType;
 	}
 	//-------------------------------------------------

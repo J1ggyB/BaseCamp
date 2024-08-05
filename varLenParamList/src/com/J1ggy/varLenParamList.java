@@ -20,9 +20,9 @@ public class varLenParamList {
 	
 	//Define the method to make use of the variable length list of parameters-------------------------------------
 	public static void aLotOfParams(String... names) {   // uses ... to indicate we don't know how many strings will be passed
-		System.out.printf("Lets's print those param's: ");
+		System.out.printf("Lets's print those param's: \n");
 		for(String name : names) {
-			System.out.print(name + " ");
+			System.out.print(name + " \n ");
 		}//End for
 	}//End of aLotOfParams()
 }//End Class

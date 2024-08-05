@@ -21,7 +21,7 @@ public class Lab6 {
 			names[i] = getString(nameText); //Call getString() which uses a Scanner to capture user input & assign to names[] Array
 			
 			String markText = String.format("Enter a grade mark between 1..100 for student %d: ", i);// create a prompt for mark user input as String markText
-			while (true)
+			while (true)// Will keep looping until I "break"
 			{
 				String inputMark = getString(markText); // use getString(with our prompt) to get user input for a mark assign to inputMark
 				Integer mark = tryParseInt(inputMark);  // use Integer.tryParseInt(with our prompt) to get user input for a mark assign to mark (now be int)

@@ -7,6 +7,12 @@ public class Dog extends Animal{  //This is a child class of the parent class An
 
 	}
 	
+	Dog(boolean hasTail, int noOfLegs, String noise){
+		this.hasTail = hasTail;
+		this.noOfLegs=noOfLegs;
+		this. noise = noise;
+	}
+	
 	public void makeNoise() {
 		System.out.println("Bark Woof Bark! pant pant pant");
 	}  //Implements the abstract method makeNoise() inherited from Animal
@@ -16,4 +22,9 @@ public class Dog extends Animal{  //This is a child class of the parent class An
 		String str = "running about";
 		return str;
 	}//Implements the abstract method move() inherited from Animal
+	
+	//completely bespoke method----------------------------------------------------
+	public void eating() {
+		System.out.println("munch munch");
+	}
 }

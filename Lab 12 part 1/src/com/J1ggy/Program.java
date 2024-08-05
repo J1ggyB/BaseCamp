@@ -22,11 +22,12 @@ public class Program {
 	//----------------------------------------------------------------------------------------------
 	private static String[] readCSV(String inFile)throws IOException{
 		try {
+
 		File file = new File(inFile);
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		String line;//will be used to read in one line at a time but the line will have comma separation!!!
 		List<String> results = new ArrayList<String>();//Can't use String[] as we don't no the size yet!!!
-				int column = 1; //Nb: column 1 works for both trainers and courses would be better as param
+				int column =1; //Nb: column 1 works for both trainers and courses would be better as param
 				while((line = br.readLine())!= null) {//read in lines while they exist
 				String[] lineHolder = line.split(",");//Each line split at commas results in a String Array!!!
 				String result = lineHolder[column];//We only need the second column of the String Array a string!

@@ -10,6 +10,8 @@ public class Practice {
 		//System.out.println("Student1 University: " + Student1.getUni()); // Don't access static data with instance calls
 		Student1.setfName("John"); 
 		System.out.println(Student.responsibleBody);
+		String s2State = Student2.getStudentState();
+		System.out.println(s2State );
 	}
 
 }

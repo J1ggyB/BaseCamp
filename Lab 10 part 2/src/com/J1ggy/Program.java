@@ -11,6 +11,7 @@ System.out.println("I'd rather have found a " + name.substring(0,3) + "g or a si
 System.out.println("As it is all just jigglyfrong my friend. It's Jabba all gone wrong!!!");
 System.out.println(name.toUpperCase());
 System.out.println(name.toLowerCase());
+System.out.println(name);
 char[] chars = name.toCharArray(); //Convert the String to a char array
 String s = "";						//We will use this to build a new String called s
 	for (int c: chars) {					//For each char in the array chars[]

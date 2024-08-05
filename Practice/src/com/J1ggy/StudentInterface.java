@@ -12,14 +12,22 @@ public interface StudentInterface {
 	public static String setUni(String University) { // provides a static method to be overridden by each Uni to the Universities Name
 		return University;
 	}	
-String getStudentState(Student s);	// method to return full details on a current Student ie: Uni, ID, fName, lName,Course
+String getStudentState();	// method to return full details on a current Student ie: Uni, ID, fName, lName,Course
+
 int getID();  //getters and setters
+
 void setID(int iD);
+
 String getfName();
+
 void setfName(String fName);
+
 String getlName();
+
 void setlName(String lName);
+
 String getCourse();
+
 void setCourse(String Course);
 }
 //THINK OF YOUR INTERFACE AS A SET OF INSTRUCTIONS ON HOW TO BUILD YOUR CLASS

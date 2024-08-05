@@ -4,7 +4,7 @@ public class Cat extends Animal{
 
 	public Cat() {  //This is a child class of the parent class Animal
 		super();    //Means we inherit from the parent in this case Animal which has a sleep() method
-		System.out.println("This is the Outer Class");
+		System.out.println("This is the OuterClass");
 		System.out.println("Here comes a Cat!!!");
 	}	
 	
@@ -16,6 +16,7 @@ public class Cat extends Animal{
 		String str = "The cat is prowling!"; //Implements the abstract method move() inherited from Animal
 		return str;
 	}
+	
 	public class Bird extends Animal{// An Inner Class ie: The Bird class is inside the Cat class
 		
 		public Bird() { // Constructor inherits from Animal

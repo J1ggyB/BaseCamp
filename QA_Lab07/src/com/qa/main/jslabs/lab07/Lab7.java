@@ -2,18 +2,18 @@ package com.qa.main.jslabs.lab07;
 
 public class Lab7 {
 	
-	public int[] sort(int[] numbers) { //sort Takes an Array as a parameter
+	public int[] sort(int[] numbers) { //sort Takes an Array as a parameter - It is a method that returns an integer Array
 		// This is probably a naff way to do it 
-		boolean working = true; //Declare a flag
+		boolean working = true; //Declare a flag - A boolean just to hold current state
 		int[] list = numbers; // pass in our Array and assign it to a variable called list
 		while(working) {
 			boolean changed = false; //Change Flag to false
 			for (int i = 0; i < list.length; i++) { //iterate the Array that was assigned to list
 				if(i == 0) continue; // Simply to avoid a runtime error caused by i-1 on first pass as this would throw an OutOfBoundsArray exception
-				if(list[i] > list[i-1]) { //So imagine we take each array item and check that it is greater than the previous item
+				if(list[i] < list[i-1]) { //So imagine we take each array item and check that it is greater than the previous item - (we could use > for alternative sort)
 					int tmp = list[i];  // if it is then save i temporarily just in an int tmp variable
 					list[i] = list[i-1]; //Lets make i equal the greater number
-					list[i-1] = tmp; // Overwrite the original Greater number with i  (ie: swap them)
+					list[i-1] = tmp; // Overwrite the original smaller number with tmp (ie: swap them)
 					changed = true; // Tag changed back to true - We should now have a sorted list
 				}
 			}

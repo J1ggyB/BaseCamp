@@ -31,7 +31,7 @@ public class Program {  /* Every program needs a class with a main method
 	   ipconfig /all /release /renew (/all /release & /renew can be thought of 
 	   as arguments or parameters of a command ipconfig  */
 
-	public static void main(String[] args) {   // The main method
+	public static void main(String[] args) {   // The main method           
 		
 			System.out.println("Hello World"); //Each statement must be terminated by ;
 		    System.out.println("My name is Figsuffer Burningboom");

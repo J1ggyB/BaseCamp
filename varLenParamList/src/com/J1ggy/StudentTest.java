@@ -21,7 +21,7 @@ public String getName() {
 public void setName(String name) {
 	Name = name;
 }
-public String toString() {
+   public String toString() {
 	int id = this.getID();
 	String str = this.getName();
 	str = "This is an instance of StudentTest ID is " + id + " Name is " + str;

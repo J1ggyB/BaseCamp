@@ -31,7 +31,7 @@ public class Student implements StudentInterface {
 			this.lName = lName;
 			this.course = course;
 		}
-	public String getStudentState(Student s) {
+	public String getStudentState() {
 		String response = getUni() +" " + this.getID() + " " + this.getfName() + "" + this.getlName() + " "
 				+ this.getCourse();
 		return response;
