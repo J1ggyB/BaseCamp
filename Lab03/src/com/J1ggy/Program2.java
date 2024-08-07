@@ -1,4 +1,4 @@
-package com.qa.main.jslabs.lab03;
+package com.J1ggy;
 
 import java.util.Scanner;            //note: fields and methods are jointly known as members of the class
 
@@ -34,3 +34,12 @@ public class Program2 {  //Start of Class declaration - pay close attention to m
 		
 	}
 }//End of Program Class
+
+
+
+
+
+
+
+
+

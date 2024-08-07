@@ -15,6 +15,7 @@ public String getJobTitle() { return jobTitle; }
 private void setJobTitle(String jobTitle) { this.jobTitle = jobTitle;}
 private void setId(int id) { this.id = id; }
 public int getId() { return id;	}
+
 public Employee(String name, String jobTitle ) {
 			      setId(++Employee.idCount * 10);
 			      setName(name);

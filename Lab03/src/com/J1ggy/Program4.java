@@ -1,4 +1,4 @@
-package com.qa.main.jslabs.lab03;
+package com.J1ggy;
 
 public class Program4 {//Start of Class Definition
 

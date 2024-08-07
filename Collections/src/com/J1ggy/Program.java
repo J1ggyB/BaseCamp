@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.TreeSet;
 
 public class Program {
 
@@ -16,7 +17,7 @@ public class Program {
 		myList.add("Bob");
 		myList.add("Rob");
 		myList.add("Billy");
-		myList.add("Brenda");
+		myList.add("Brenda");                                                                                                    //Try Integers  get an average as an int
 		myList.add("Frank");
 		System.out.println(myList);
 		System.out.println(myList.get(1) + " - Should be Rob?");
@@ -46,7 +47,7 @@ public class Program {
 		myHMap.put("Ireland", "Dublin");
 		myHMap.put("Wales", "Cardiff");
 		myHMap.put("England", "London");
-		myHMap.put("France", "Paris");
+		myHMap.put("France", "Paris");                                                                                    //try and get the key for Wales then look up capital
 		System.out.println(myHMap);
 		String Sct = myHMap.get("Scotland");
 		System.out.println("The capital of Scotland is: " + Sct);
@@ -68,8 +69,8 @@ public class Program {
 		bikes.add("Ducatti");
 		bikes.add("BSA");
 		bikes.add("Royal Enfield");
-		bikes.add("Moto Guzzi");
-		bikes.add("Triumph");
+		bikes.add("Moto Guzzi");                                                                                      //create two sets a TreeSet and a HashSet  find an item 
+		bikes.add("Triumph");                                                                                              //that exists in both sets
 		System.out.println(bikes);
 		System.out.println(bikes.contains("Triumph"));
 		for(String b : bikes) {
@@ -78,7 +79,20 @@ public class Program {
 		//--------------------------------------------------------------------------------------------
 		System.out.println("--------------------------------------------------------");
 		//--------------------------------------------------------------------------------------------
-		//ArrayDeque
+		//TreeSet--------------------------------------------------------------------------------
+		//Automatically sorts the elements in natural order or using a custom comparator
+		 TreeSet<String> fnames = new TreeSet<>();
+	        
+	        fnames.add("John");
+	        fnames.add("Francis");
+	        fnames.add("Amy");
+	        fnames.add("Julie");
+	        fnames.add("John");
+
+	        System.out.println("Names in TreeSet: " + fnames + "\n-------------------------------------------------------");
+	    //---------------------------------------------------------------------------------------------------
+		//ArrayDeque - Think of it as a Queue FIFO
+	        System.out.println("ArrayDeque or Queue\n-------------------------------------------------------");
 		ArrayDeque<String> myQueue = new ArrayDeque<>();
 		myQueue.add("Duncan");
 		myQueue.add("Dave");
@@ -88,7 +102,7 @@ public class Program {
 		System.out.println(myQueue);
 		while(!myQueue.isEmpty()) {
 			String name = myQueue.pop();
-			System.out.println(name);
+			System.out.println("name: " + name);
 		}
         System.out.println(myQueue);
 		myQueue.add("Duncan");
@@ -97,7 +111,7 @@ public class Program {
 		myQueue.add("Diane");
 		myQueue.add("William");
 		for(String nmes : myQueue) {
-			System.out.println(nmes);
+			System.out.println("names using for each loop: " + nmes);
 		}
 	}
 

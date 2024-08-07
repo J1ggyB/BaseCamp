@@ -1,8 +1,11 @@
 package com.Jiggy;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Zoo {
+
+
 	private HashMap<String, Integer>animalMap = null;//Just a field null until "new" creates instance
 	private String[]existingAnimals = {"Zebra","Lion","Lion","Buffalo","Buffalo"};//String Array for Keys
 	private String[]newAnimals = {"Polar Bear","Polar Bear","Gazelle",

@@ -1,4 +1,4 @@
-package com.qa.main.jslabs.lab03;
+package com.J1ggy;
 
 import java.util.Scanner; //imports the Scanner library from the java.util Library
 

@@ -4,14 +4,14 @@ public class MyDbConnection {
 
 	public static void main(String[] args) {
 		try{
-		Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/Students_db","admin","12345");
+		Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/Students_db","watso","gww22");
 		System.out.println("Connection Good!");
 		
 		PreparedStatement pstat = c.prepareStatement("insert into students values(?,?,?)");
 		
-		pstat.setNString(1, "1");
-		pstat.setNString(2, "Mohammed");
-		pstat.setNString(3, "Ali");
+		pstat.setNString(1, "3");
+		pstat.setNString(2, "Jimmy");
+		pstat.setNString(3, "Gordon");
 
 		
 		pstat.executeUpdate();
@@ -21,3 +21,4 @@ public class MyDbConnection {
 	}
 
 }
+//
