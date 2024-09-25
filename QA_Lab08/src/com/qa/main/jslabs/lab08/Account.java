@@ -42,7 +42,8 @@ public class Account {//Class from which we can create instances
 	public void Withdraw(double amount) { //If amount is less than or equal to balance deduct the amount
 		if (amount <= balance) {
 			balance -= amount;
-		}
+		}else {System.out.println("You do not have enough funds ");}
+		
 	}
 
 	public void getDetails() {   // Returns the Account Details
