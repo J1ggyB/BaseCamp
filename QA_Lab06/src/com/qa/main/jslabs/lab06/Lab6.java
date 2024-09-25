@@ -40,19 +40,19 @@ public class Lab6 {
 		}
 		
 		for (int i = 0; i < marks.length; i++) { //iterate through marks
-			String resultText = "Grade for student %d is: %s\n"; //Building partial output String for the common text
+			String resultText = "Mark for %s is %d Grade is: %s\n"; //Building partial output String for the common text
 			// Get result
 			if (marks[i] >= 71) { //Check the mark
-				System.out.printf(resultText, i, "Distinction"); // Populated the partial output and printed to screen Note use of printf
+				System.out.printf(resultText, names[i] , marks[i], "Distinction"); // Populated the partial output and printed to screen Note use of printf
 			}
 			else if (marks[i] >= 61 && marks[i] <= 70) { // rinse and repeat for other mark ranges
-				System.out.printf(resultText, i, "Merit");
+				System.out.printf(resultText, names[i] , marks[i], "Merit");
 			}
 			else if (marks[i] >= 50 && marks[i] <= 60) {
-				System.out.printf(resultText, i, "Pass");
+				System.out.printf(resultText, names[i] , marks[i], "Pass");
 			}
 			else {
-				System.out.printf(resultText, i, "Fail");
+				System.out.printf(resultText, names[i] , marks[i], "Fail");
 			}
 		}
 		s.close();
@@ -60,8 +60,8 @@ public class Lab6 {
 
 	private void account() { //method account() adds interest to initialAmount each year until it hits targetAmount
 
-		float initalAmount = 100;  // float to hold initial amount
-		float targetAmount = 200;  //float to hold target
+		float initalAmount = 100f;  // float to hold initial amount
+		float targetAmount = 200f;  //float to hold target
 		float interestRate = 0.05f; // float to hold interest rate
 		float currentAmount = initalAmount; //float currentAmount will be increased each year but is initialised to initialAmount
 		int year = 1;  //int year holds the year number
