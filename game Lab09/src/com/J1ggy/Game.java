@@ -11,9 +11,9 @@ public class Game extends Canvas { //Canvas is a subclass of Java Component inte
 	// create an array of 3 balls 
 	// call this array balls
 	Ball[] balls = new Ball[3];// Create an Array to hold three ball instances
-	Ball ball1 = new Ball(0,0,70,70);//Create three instances of Ball class
-	Ball ball2 = new Ball(400,300,70,70);	
-	Ball ball3 = new Ball(50,700,70,70);
+	Ball ball1 = new Ball(0,0,70,200);//Create three instances of Ball class
+	Ball ball2 = new Ball(400,300,90,90);	
+	Ball ball3 = new Ball(50,700,50,50);
 
 	public static void main(String[] args) {//Execute the program
 	      Game myGame = new Game();//Create an instance of the Game class
@@ -36,7 +36,7 @@ draw();
 }
 };
 
-t.schedule(tt, 0, 50);// Syntax: public void schedule(TimerTask task, first execution, repeat schedule)in milliseconds 
+t.schedule(tt, 0, 10);// Syntax: public void schedule(TimerTask task, first execution, repeat schedule)in milliseconds 
 
 		
 frame.addWindowListener(new WindowAdapter() {// Listenes for Window tasks ie:close

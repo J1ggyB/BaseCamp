@@ -16,7 +16,7 @@ public class Ball {
 		this.y = y;
 		this.w = w;
 		this.h = h;
-		this.dirX = dirX;
+		this.dirX = dirX;car1
 		this.dirY = dirY;
 	}
 	//------------------------------------------------
