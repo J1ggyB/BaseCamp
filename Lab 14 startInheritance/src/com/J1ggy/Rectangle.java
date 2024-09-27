@@ -1,6 +1,14 @@
 package com.J1ggy;
 
+import java.awt.Color;
+import java.awt.Point;
+
 public class Rectangle extends Shape {
+public Rectangle(double sideA, double sideB, Color colour, Point position) {
+		super(colour, position);
+		this.sideA = sideA;
+		this.sideB = sideB;
+	}
 double sideA;
 double sideB;
 
@@ -14,11 +22,11 @@ public double getCircumference() {
 }
 public String getCharacteristics() {
 	String result = "Characteristics of the Rectangle are: "
-			+ " Area: "  + this.getArea()
-			+ " Length: " + sideA
-			+ " Width: " + sideB
-			+ " Circumference: " + this.getCircumference()
-			+ " Colour: " + this.getColour()
+			+ " Area: "  + this.getArea() + "\n"
+			+ " Length: " + sideA+ "\n"
+			+ " Width: " + sideB+ "\n"
+			+ " Circumference: " + this.getCircumference()+ "\n"
+			+ " Colour: " + this.getColour()+ "\n"
 			+ " Position: "+ this.getPosition() + "\n";
 	
 	return result;

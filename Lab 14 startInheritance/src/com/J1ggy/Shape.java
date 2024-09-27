@@ -2,8 +2,14 @@ package com.J1ggy;
 
 import java.awt.*;
 public class Shape {
+	public Shape(Color colour, Point position) {
+		super();
+		this.colour = colour;
+		this.position = position;
+	}
 	Color colour;
 	Point position;
+	
 	//Getters & Setters
 	public Color getColour() {
 		return colour;

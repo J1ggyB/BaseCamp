@@ -9,7 +9,7 @@ public class EnumExample {
             System.out.println("\n-----------------------------------Example 1------------------------------------------------\n");
 	        // Print the access level and its description
 	        System.out.println("Access Level: " + level);  //Print the value of the enum referenced by "level"
-	        System.out.println("Description: " + level.getDescription()); //Print the result of the getDescription() method of the enum AccessLevel - referenced by "level"
+	   //    System.out.println("Description: " + level.getDescription()); //Print the result of the getDescription() method of the enum AccessLevel - referenced by "level"
 	        
 	        
             System.out.println("\n-------------------------------Example 2---------------------------------------\n");
@@ -32,7 +32,7 @@ public class EnumExample {
             	        // List all access levels using values() method
 	        System.out.println("\nAvailable Access Levels:");
 	        for (AccessLevel access : AccessLevel.values()) {    // .values() is a predefined method of enum - treats the enum structure a bit like an Array
-	            System.out.println(access + ": " + access.getDescription()); // Loop through all the possible values of the AccessLevel enum structure and print them out by repeatedly calling getDescription() method
+	          System.out.println(access + ": " + access.getDescription()); // Loop through all the possible values of the AccessLevel enum structure and print them out by repeatedly calling getDescription() method
 	        }
 	        
             System.out.println("\n---------------------------Example 4-----------------------------------------\n");
@@ -43,7 +43,7 @@ public class EnumExample {
 	        System.out.println("\n---------------------------Example5----------------------------------------------\n");
 	        	        // Check if one level is higher than another
 	        AccessLevel anotherLevel = AccessLevel.USER;
-	        System.out.println(level + " is higher than " + anotherLevel + ": " + level.isHigherThan(anotherLevel)); // .isHigherThan()  is a predefined method that compares the ordinals of the enum values
+	      System.out.println(level + " is higher than " + anotherLevel + ": " + level.isHigherThan(anotherLevel)); // .isHigherThan()  is a predefined method that compares the ordinals of the enum values
 	        
 	        System.out.println("\n---------------------------Example 6------------------------------------------\n");
 	        	     // Using valueOf() method to get enum from string
@@ -51,14 +51,14 @@ public class EnumExample {
 	        try {
 	        AccessLevel retrievedLevel = AccessLevel.valueOf(levelName);  //.valueOf(String n)  is a predefined method of enum that takes a string n and tries to find a matching value or thows an illegalArgumentException
 	        System.out.println("Retrieved Access Level from string: " + retrievedLevel);
-	        System.out.println("Description: " + retrievedLevel.getDescription());
+	       System.out.println("Description: " + retrievedLevel.getDescription());
 	        }catch(IllegalArgumentException e){e.printStackTrace();}
 	        
 	        System.out.println("\n------------------------------Example 7-------------------------------------\n");
 	        	        // List all access levels using values() method
 	        System.out.println("\nAvailable Access Levels:");
 	        for (AccessLevel access : AccessLevel.values()) { //Using for each loop and .getDescription() method of the enum structure to print out access levels of each constant
-	            System.out.println(access + ": " + access.getDescription()); 
+	         System.out.println(access + ": " + access.getDescription()); 
 	        }
 	        System.out.println("\n----------------------------------End--------------------------------------------\n");
 	    }

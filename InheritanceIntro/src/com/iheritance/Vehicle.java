@@ -2,7 +2,10 @@ package com.iheritance;
 
 //Abstract Vehicle class - THE PURPOSE OF AN ABSTRACT CLASS IS TO DEFINE THE COMMON CHARACTERISTICS OF SUBCLASSES
  public abstract class Vehicle {
- private String make;
+
+
+
+private String make;
  private String model;
  private int noOfWheels;
 

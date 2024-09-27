@@ -14,7 +14,7 @@ public class Game extends Canvas{
 	Shape[] shapes = new Shape[5];// Create an Array to hold five shape instances
 	Shape shape1 = new Shape(0,0,70,70,SHAPE_TYPE.ROUNDRECTANGLE);//Create five instances of Shape class
 	Shape shape2 = new Shape(400,50,70,70,SHAPE_TYPE.THREEDRECTANGLE);	
-	Shape shape3 = new Shape(50,700,70,70, SHAPE_TYPE.OVAL);
+	Shape shape3 = new Shape(50,700,200,70, SHAPE_TYPE.OVAL);
 	Shape shape4 = new Shape(700,600,70,70, SHAPE_TYPE.ARC);
 	Shape shape5 = new Shape(350,350,70,70, SHAPE_TYPE.RECTANGLE);
 	
@@ -72,7 +72,7 @@ GradientPaint btom = new GradientPaint(0,0,Color.BLUE,800, 800,Color.MAGENTA);
 GradientPaint gtoo = new GradientPaint(0,0,Color.GREEN,800, 800,Color.ORANGE);
 GradientPaint otor = new GradientPaint(0,0,Color.ORANGE,800, 800,Color.RED);
 GradientPaint rtop = new GradientPaint(0,0,Color.RED,800, 800,Color.PINK);
-GradientPaint blktolg = new GradientPaint(0,0,Color.BLACK,400, 400,Color.LIGHT_GRAY);
+GradientPaint blktolg = new GradientPaint(0,0,Color.GREEN,400, 400,Color.LIGHT_GRAY);
 // move and draw each ball in balls array
 // Tip: use an enhanced for loop to pick 
 //	  each ball in the balls array.

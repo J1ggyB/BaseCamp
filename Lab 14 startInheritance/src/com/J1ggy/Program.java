@@ -9,24 +9,17 @@ public class Program {
 		Point posTwo = new Point(100,100);
 		Point posThree = new Point(500,500);
 		
-		Sphere mySphere = new Sphere();
-		mySphere.setColour(Color.BLUE);
-		mySphere.setPosition(posOne);
-		mySphere.setRadius(4);
+		Sphere mySphere = new Sphere(4, Color.BLUE, posOne);
 		mySphere.printCharacteristics();
 		System.out.println("\n");
+		System.out.println("\n------------------------------------------------------------\n");
 		//---------------------------------------
-		Circle myCircle = new Circle();
-		myCircle.setColour(Color.GREEN);
-		myCircle.setRadius(9.86);
-		myCircle.setPosition(posTwo);
+		Circle myCircle = new Circle(9.86, Color.GREEN, posTwo);
 		myCircle.printCharacteristics();
 		System.out.println("\n");
+		System.out.println("\n------------------------------------------------------------\n");
 		//-----------------------------------
-		Rectangle myRect = new Rectangle();
-		myRect.setSides(60, 30);
-		myRect.setColour(Color.RED);
-		myRect.setPosition(posThree);
+		Rectangle myRect = new Rectangle(60, 30, Color.RED, posThree);
 		System.out.println(myRect.getCharacteristics());
 
 	}

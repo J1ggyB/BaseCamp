@@ -27,5 +27,5 @@ public enum AccessLevel {
     // Method to check if the current level is higher than another level by ordinal the zero index being considered highest ie: in this case ADMIN has the ordinal 0
     public boolean isHigherThan(AccessLevel other) {
         return this.ordinal() < other.ordinal();
-    }
+    } 
 }
