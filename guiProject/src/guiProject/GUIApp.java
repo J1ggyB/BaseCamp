@@ -11,6 +11,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.awt.event.ActionEvent;
 
 public class GUIApp {
@@ -19,7 +22,7 @@ public class GUIApp {
 	private JTextField nameField;
 	private JTextField emailField;
 	private JTextField mobileField;
-	//private static int studentCount = 1;
+
 
 	/**
 	 * Launch the application.
@@ -33,6 +36,7 @@ public class GUIApp {
 				} catch (Exception e) {e.printStackTrace();}
 			}
 		});
+		
 }	
 
 
@@ -75,7 +79,8 @@ public class GUIApp {
 		LabelEmail.setBounds(77, 120, 60, 17);
 		frmGraemesApp.getContentPane().add(LabelEmail);
 		
-		emailField = new JTextField();
+		emailField = new JTextField();									
+		Student.printStudents();
 		emailField.setBounds(155, 118, 114, 21);
 		frmGraemesApp.getContentPane().add(emailField);
 		emailField.setColumns(10);
@@ -96,9 +101,22 @@ public class GUIApp {
 					if(! (nameField.getText().equals(""))&&! (emailField.getText().equals("") )&&! (mobileField.getText().equals(""))){   //****NOTE:  .equals(rather than == as we are using String which is an Object)
 							if(! (nameField.getText().equals(null))&& ! (emailField.getText().equals(null))&&! (mobileField.getText() .equals(null))){	// Logic if all fields are not empty or null
 									Student x = new Student(nameField.getText(),emailField.getText(), mobileField.getText());
-									Student.addStudent(x);
-//									studentCount += 1;
-									Student.printStudents();
+
+									try{
+										Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/gui_db","CHANGE HERE","CHANGE HERE");
+										System.out.println("Connection Good!");
+										
+										PreparedStatement pstat = c.prepareStatement("insert into students(name, email, Mobile)  values(?,?,?)");
+
+										pstat.setNString(1, x.getName());
+										pstat.setNString(2, x.getEmail());
+										pstat.setNString(3, x.getMobile());
+
+										
+										pstat.executeUpdate();
+										System.out.println("successful Update");  
+										
+										}catch(Exception e) {System.out.println("Error connecting to Database" );e.printStackTrace();}
 									nameField.setText("");
 									emailField.setText("");
 									mobileField.setText("");
