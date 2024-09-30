@@ -93,8 +93,8 @@ public class GUIApp {
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					if(! (nameField.getText().equals(""))|| ! (emailField.getText().equals("") )|| ! (mobileField.getText().equals(""))){
-							if(! (nameField.getText().equals(null))|| ! (emailField.getText().equals(null))|| ! (mobileField.getText() .equals(null))){		
+					if(! (nameField.getText().equals(""))&&! (emailField.getText().equals("") )&&! (mobileField.getText().equals(""))){   //****NOTE:  .equals(rather than == as we are using String which is an Object)
+							if(! (nameField.getText().equals(null))&& ! (emailField.getText().equals(null))&&! (mobileField.getText() .equals(null))){	// Logic if all fields are not empty or null
 									Student x = new Student(nameField.getText(),emailField.getText(), mobileField.getText());
 									Student.addStudent(x);
 //									studentCount += 1;
