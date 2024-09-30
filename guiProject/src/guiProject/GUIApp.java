@@ -16,9 +16,9 @@ import java.awt.event.ActionEvent;
 public class GUIApp {
 
 	private JFrame frmGraemesApp;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField nameField;
+	private JTextField emailField;
+	private JTextField mobileField;
 	//private static int studentCount = 1;
 
 	/**
@@ -62,43 +62,46 @@ public class GUIApp {
 		lblName.setBounds(77, 80, 60, 17);
 		frmGraemesApp.getContentPane().add(lblName);
 		
-		textField = new JTextField();
-		textField.setBounds(155, 78, 114, 21);
-		frmGraemesApp.getContentPane().add(textField);
-		textField.setColumns(10);
+		nameField = new JTextField();
+		nameField.setBounds(155, 78, 114, 21);
+		frmGraemesApp.getContentPane().add(nameField);
+		nameField.setColumns(10);
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 0, 10, 10);
 		frmGraemesApp.getContentPane().add(panel);
 		
-		JLabel lblNewLabel = new JLabel("email");
-		lblNewLabel.setBounds(77, 120, 60, 17);
-		frmGraemesApp.getContentPane().add(lblNewLabel);
+		JLabel LabelEmail = new JLabel("email");
+		LabelEmail.setBounds(77, 120, 60, 17);
+		frmGraemesApp.getContentPane().add(LabelEmail);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(155, 118, 114, 21);
-		frmGraemesApp.getContentPane().add(textField_1);
-		textField_1.setColumns(10);
+		emailField = new JTextField();
+		emailField.setBounds(155, 118, 114, 21);
+		frmGraemesApp.getContentPane().add(emailField);
+		emailField.setColumns(10);
 		
 		JLabel lblMobile = new JLabel("Mobile");
 		lblMobile.setBounds(77, 159, 60, 17);
 		frmGraemesApp.getContentPane().add(lblMobile);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(155, 157, 114, 21);
-		frmGraemesApp.getContentPane().add(textField_2);
-		textField_2.setColumns(10);
+		mobileField = new JTextField();
+		mobileField.setBounds(155, 157, 114, 21);
+		frmGraemesApp.getContentPane().add(mobileField);
+		mobileField.setColumns(10);
 		
 		JButton btnSubmit = new JButton("Submit");
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					if(! (lblName.getText()== "")&& ! (lblNewLabel.getText()== "" )&& ! (lblMobile.getText() =="")) {
-							if(! (lblName.getText()== null)&& ! (lblNewLabel.getText()== null)&& ! (lblMobile.getText() ==null)) {		
-									Student x = new Student(lblName.getText(),lblNewLabel.getText(), lblMobile.getText());
+					if(! (nameField.getText()== "")&& ! (emailField.getText()== "" )&& ! (mobileField.getText() =="")) {
+							if(! (nameField.getText()== null)&& ! (emailField.getText()== null)&& ! (mobileField.getText() ==null)) {		
+									Student x = new Student(nameField.getText(),emailField.getText(), mobileField.getText());
 									Student.addStudent(x);
 //									studentCount += 1;
 									Student.printStudents();
+									nameField.setText("");
+									emailField.setText("");
+									mobileField.setText("");
 									}
 						}else {System.out.println("please ensure you have populated each field before submitting" );}
 				}catch(Exception e) {System.out.println("please ensure you have populated each field before submitting" );}
@@ -109,7 +112,7 @@ public class GUIApp {
 		
 		JButton btnNewButton = new JButton("");
 		btnNewButton.setBounds(296, 80, 80, 80);
-		btnNewButton.setIcon(new ImageIcon("/home/watso/eclipse_Workspace_JEEE/guiProject/src/AOC.png"));
+		btnNewButton.setIcon(new ImageIcon("/home/watso/Repo_1/QA/guiProject/src/AOC.png"));
 		frmGraemesApp.getContentPane().add(btnNewButton);
 	}
 }

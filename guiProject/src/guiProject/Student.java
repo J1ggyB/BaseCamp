@@ -39,10 +39,16 @@ private static List <Student>students = new ArrayList<>();
 	public static void addStudent(Student student) {
 		students.add(student);
 	}
+
 	public static void printStudents() {
 		for(Student student : students) {
-			System.out.println("\tStudent: " + student.toString() +"\n");
+			System.out.println(student.toString() );
 		}
+	}
+	@Override
+	public String toString() {
+     String response ="Student: " + name + " e-mail: " +  email + "Mobile: " + Mobile + " has been added to the Student List";
+     return response;
 	}
 }
 
