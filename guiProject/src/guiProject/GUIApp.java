@@ -93,8 +93,8 @@ public class GUIApp {
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					if(! (nameField.getText()== "")&& ! (emailField.getText()== "" )&& ! (mobileField.getText() =="")) {
-							if(! (nameField.getText()== null)&& ! (emailField.getText()== null)&& ! (mobileField.getText() ==null)) {		
+					if(! (nameField.getText().equals(""))|| ! (emailField.getText().equals("") )|| ! (mobileField.getText().equals(""))){
+							if(! (nameField.getText().equals(null))|| ! (emailField.getText().equals(null))|| ! (mobileField.getText() .equals(null))){		
 									Student x = new Student(nameField.getText(),emailField.getText(), mobileField.getText());
 									Student.addStudent(x);
 //									studentCount += 1;
