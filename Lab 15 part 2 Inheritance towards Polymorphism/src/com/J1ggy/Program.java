@@ -9,13 +9,14 @@ public class Program {
 		
 		Employee Dave = new Manager("Dave Smith", "Manager");
 		Employee Sarah = new Employee("Sarah MacLean", "HR supervisor");
-		Employee William = new SkilledWorker("William Fraser", "Designer", "Graphics");
+		SkilledWorker William = new SkilledWorker("William Fraser", "Designer", "Graphic & WebDesign");
 		Employee Frank = new Employee("Frank MacIlveny", "Warehouse supervisor");
 		Employee Duncan = new Employee("Duncan McDermid", "Orders Clerk");
 		Employee Suzie = new Employee("Suzie Smith", "Accountant");
 		Employee DaveB = new Employee("Dave Bacon", "Despatch");
-		Employee Douglas = new SkilledWorker("Douglas Bruce", "IT", "networking");
-		
+		SkilledWorker Douglas = new SkilledWorker("Douglas Bruce", "IT", "Cisco Qualified Networking Engineer");
+
+
 		
 		Employee.employees.add(Dave);
 		Employee.employees.add(Sarah);
@@ -26,7 +27,10 @@ public class Program {
 		Employee.employees.add(DaveB);
 		Employee.employees.add(Douglas);
 		for (Employee e : Employee.employees ) {
-		System.out.println(e.getInfo());
+			if(e instanceof SkilledWorker) {
+				SkilledWorker sw = (SkilledWorker) e;
+				System.out.println(sw.getInfo());
+			}else {System.out.println(e.getInfo());}
 		}
 			
 		}//End Main
