@@ -10,6 +10,8 @@ import javax.swing.JButton;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class GUIApp {
 
@@ -17,6 +19,7 @@ public class GUIApp {
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
+	//private static int studentCount = 1;
 
 	/**
 	 * Launch the application.
@@ -27,12 +30,11 @@ public class GUIApp {
 				try {
 					GUIApp window = new GUIApp();
 					window.frmGraemesApp.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
+				} catch (Exception e) {e.printStackTrace();}
 			}
 		});
-	}
+}	
+
 
 	/**
 	 * Create the application.
@@ -49,7 +51,7 @@ public class GUIApp {
 		frmGraemesApp.setBackground(new Color(255, 255, 255));
 		frmGraemesApp.getContentPane().setBackground(new Color(255, 255, 255));
 		frmGraemesApp.setVisible(true);
-		frmGraemesApp.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/watso/eclipse_Workspace_JEEE/guiProject/src/Logo.png"));
+//		frmGraemesApp.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/watso/eclipse_Workspace_JEEE/guiProject/src/Logo.png"));
 
 		frmGraemesApp.setTitle("Graeme's App");
 		frmGraemesApp.setBounds(100, 100, 450, 300);
@@ -88,6 +90,20 @@ public class GUIApp {
 		textField_2.setColumns(10);
 		
 		JButton btnSubmit = new JButton("Submit");
+		btnSubmit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try {
+					if(! (lblName.getText()== "")&& ! (lblNewLabel.getText()== "" )&& ! (lblMobile.getText() =="")) {
+							if(! (lblName.getText()== null)&& ! (lblNewLabel.getText()== null)&& ! (lblMobile.getText() ==null)) {		
+									Student x = new Student(lblName.getText(),lblNewLabel.getText(), lblMobile.getText());
+									Student.addStudent(x);
+//									studentCount += 1;
+									Student.printStudents();
+									}
+						}else {System.out.println("please ensure you have populated each field before submitting" );}
+				}catch(Exception e) {System.out.println("please ensure you have populated each field before submitting" );}
+			}
+		});
 		btnSubmit.setBounds(271, 205, 105, 27);
 		frmGraemesApp.getContentPane().add(btnSubmit);
 		
