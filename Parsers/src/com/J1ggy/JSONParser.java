@@ -18,7 +18,7 @@ public class JSONParser {  //CLASS TO PARSE JSON FILE SUPPLIED TO US BY THE SUMM
     ArrayList<SGItem> items = new ArrayList<>();   
      public void parse() {
         Gson gson = new Gson();//Create new instance of Gson Class
-   	    String fileName = "/home/watso/eclipse_Workspace_JEEE/UserInterfaceMeals2Go/src/com/J1ggy/SummerGardenMenuItems.json";//Give the path to the file
+   	    String fileName = "/home/watso/eclipse_Workspace_JEEE/Parsers/src/com/J1ggy/SummerGardenMenuItems.json";//Give the path to the file
    	    try {
    	    	String content = new String(Files.readAllBytes(Paths.get(fileName)));//Read file at path into String
    	    	SGItem[] items = gson.fromJson(content, SGItem[].class);  //fromJson() converts Json content to Java objects

@@ -37,7 +37,7 @@ public class Program3 {
         } catch (InputMismatchException e) {
             System.out.println("Invalid input. Please enter a valid integer.");
             scanner.next(); // Consume the invalid input
-            input = getInt(scanner, prompt);
+           input = getInt(scanner, prompt);
         }
         return input;
     }

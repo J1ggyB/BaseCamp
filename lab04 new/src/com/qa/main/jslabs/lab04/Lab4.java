@@ -40,6 +40,7 @@ public class Lab4 {
 		try {									//Use a try/catch block (Exception Handling) 
 			return Integer.parseInt(text);		//Try to parse the String to int and return the int
 		} catch (NumberFormatException e) {     //If it fails to parse catch the exception - close the Scanner and return null
+			//e.printStackTrace();
 			s.close();
 			return null;
 		}

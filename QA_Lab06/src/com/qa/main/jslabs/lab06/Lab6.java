@@ -68,7 +68,7 @@ public class Lab6 {
 		
 		while (currentAmount < targetAmount) {  //Condition for loop end
 			currentAmount = currentAmount + (currentAmount * interestRate); // while looping add the interest to current amount
-			System.out.printf("Year %d: £%f\n", year, currentAmount); //print out the interest for each year
+			System.out.printf("Year %d: £%.2f\n", year, currentAmount); //print out the interest for each year
 			year++;
 		}
 		

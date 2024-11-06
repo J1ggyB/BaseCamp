@@ -2,7 +2,7 @@ package com.J1ggy;
 
 public class Program {  //The idea of a Singleton class is to create one and only one instance of a class
 
-	public static void main(String[] args) {   //Here we are constucting one and only one instance of a SimpleSingleton Class ...and one and only one instance of a Singleton Class
+	public static void main(String[] args) {   //Here we are constructing one and only one instance of a SimpleSingleton Class ...and one and only one instance of a Singleton Class
 SimpleSingleton simpleSingle = SimpleSingleton.getInstance(" Hello  I exist!")	;   // Notice we are using a method to call a PRIVATE Constructor rather than a Constructor
 simpleSingle.printSomeData(); // method to print the contents of the PRIVATE "someData" field of the instance of SimpleSingleton
 //***	Note the above class is not Thread safe.	
