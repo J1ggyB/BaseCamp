@@ -8,7 +8,6 @@ public class Program {
 
 	public static void main(String[] args) {
 		ArrayList<String> flavours = new ArrayList<>();
-        String banana = "Not banana we don't do banana";
         String whisky = "Whisky";
         String  beer = "Heineken";
         String bacon = "Bacon";
@@ -17,7 +16,6 @@ public class Program {
         flavours.add(bacon);
         flavours.add(beer);
         flavours.add(whisky);
-        System.out.println(banana);
         System.out.println(flavours);
         System.out.println("flavours.sort(); Will not work use the Collections Utility Class");
 		Collections.sort(flavours);

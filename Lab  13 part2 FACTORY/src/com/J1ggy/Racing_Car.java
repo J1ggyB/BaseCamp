@@ -1,11 +1,6 @@
 package com.J1ggy;
 
-
-
 import javax.swing.JButton;
-
-
-
 
 public class Racing_Car implements Vehicle{
 	public String licensePlate = "";

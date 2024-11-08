@@ -1,7 +1,5 @@
 package com.J1ggy;
 
-
-
 interface Vehicle {
 
 public String licensePlate = "";

@@ -5,13 +5,14 @@ private int age;
 public StudentInst() {
 	super();
 	}
-public String getName() {
-	return name;
-}
+
 public StudentInst(String name, int age) {
 	super();
 	this.name = name;
 	this.age = age;
+}
+public String getName() {
+	return name;
 }
 public void setName(String name) {
 	this.name = name;
