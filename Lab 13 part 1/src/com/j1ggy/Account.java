@@ -1,42 +1,31 @@
 package com.j1ggy;
 
 public class Account {
-	int id; 
-	double balance; 
-	String owner;
-	
-	public Account(int id, double balance, String owner) {
-		super();
-		this.id = id;
-		this.balance = balance;
-		this.owner = owner;
-	}
-	
-	void withdraw(double amount) throws IllegalArgumentException  {
-		try {
-			
-				if(amount > this.balance) {
-					throw new IllegalArgumentException();
-				}
-				else {
-					this.balance -= amount;
-				}
-			}catch(Exception e) {
-				System.out.println("Insufficient funds");
-				e.printStackTrace();
-			}finally {this.close();}
-	}
-	void deposit(double amount)  {
-		this.balance += amount;
-	}
-	void close() {
-	System.out.println("account: " + id + " is closed");
-	}
+    private int accountNumber;
+    private double balance;
+    private String accountHolder;
 
-	String getDetails() {
-		String Details = ("Account: " + id 
-							+ ", Owner: " + owner
-							+ ", Balance: " + balance);
-		return Details;
-	}
+    // Constructor
+    public Account(int accountNumber, double initialBalance, String accountHolder) {
+        this.accountNumber = accountNumber;
+        this.balance = initialBalance;
+        this.accountHolder = accountHolder;
+    }
+
+    // Withdraw method
+    public void withdraw(double amount) {
+        if (amount > balance) {
+            System.out.println("Insufficient funds for withdrawal of " + amount);
+        } else {
+            balance -= amount;
+            System.out.println("Withdrawal of " + amount + " successful");
+        }
+    }
+
+    // Get account details
+    public String getDetails() {
+        return "Account Number: " + accountNumber + "\n" +
+               "Account Holder: " + accountHolder + "\n" +
+               "Current Balance: " + balance;
+    }
 }

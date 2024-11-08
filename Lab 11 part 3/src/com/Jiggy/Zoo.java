@@ -10,9 +10,10 @@ public class Zoo {
 	private String[]existingAnimals = {"Zebra","Lion","Lion","Buffalo","Buffalo"};//String Array for Keys
 	private String[]newAnimals = {"Polar Bear","Polar Bear","Gazelle",
 			"Gazelle","Parrot","Parrot", "Monkey","Monkey", "Monkey","Monkey"};// String Array for Keys
+	
 public Zoo() {//Constructor
 		super();//Inherit parent properties - In this case Object
-		this.animalMap = new HashMap<String, Integer>();//Creates HashMap instance & Assigns to field
+		this.animalMap = new HashMap<String, Integer>();//Creates HashMap instance & Assigns to field      
 		animalMap.put("Zebra", 15);// put(key, value) adds key value pairs to HashMap
 		animalMap.put("Buffalo", 20);
 		animalMap.put("Lion", 6);

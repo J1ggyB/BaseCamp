@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import java.util.Timer;
+
+//import java.util.Timer;
 import javax.swing.*;
 
 public class Game extends Canvas { //Canvas is a subclass of Java Component interface
@@ -14,7 +16,7 @@ public class Game extends Canvas { //Canvas is a subclass of Java Component inte
 	Ball ball1 = new Ball(0,0,70,70);//Create three instances of Ball class
 	Ball ball2 = new Ball(400,300,70,70);	
 	Ball ball3 = new Ball(50,700,70,70);
-
+    Dimension window = new Dimension(800,800);
 	public static void main(String[] args) {//Execute the program
 	      Game myGame = new Game();//Create an instance of the Game class
 		}
@@ -22,9 +24,13 @@ public class Game extends Canvas { //Canvas is a subclass of Java Component inte
 balls[0] = ball1;//Assign the three instances of ball into the balls Array
 balls[1] = ball2;
 balls[2] = ball3;
+
 JFrame frame = new JFrame();//Create a frame object (a Window)
 this.setSize(800, 800);//Set the size of the Canvas or Game
 frame.add(this); //Add the frame to the Game
+frame.setPreferredSize(window);
+frame.setMinimumSize(getPreferredSize());
+frame.setMaximumSize(window);
 frame.pack();//The pack() method is defined as a Window class in Java and it sizes the frame
 frame.setVisible(true);//make the frame Visible
 

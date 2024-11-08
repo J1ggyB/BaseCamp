@@ -80,3 +80,14 @@ public class Lab7 {
 		return sum;
 	}
 }
+
+
+
+///    IF WE HAVE AN  ARRAY {17, 0, 45,62,3, 101}
+// INDEXES  17=0   0 = 1   45=2  62 = 3   3 = 4   101 =5   WE HAVE 6 ELEMENTS
+// If 17 is at index 0 then nothing comes before it in the array
+// we can' t compare 17 to the previous value as 17 is the first value
+// This would throw an IndexOutOfBounds exception
+// To avoid this we use the line - if(i == 0) continue; 
+// continue simply skips this iteration of the loop and re-enters the for loop at index 1
+

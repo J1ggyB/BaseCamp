@@ -1,7 +1,7 @@
 package com.qa.main.jslabs.lab08;
 
 public class Program {
-
+	public static  boolean match = false;
 	public static void main(String[] args) {
 		// Lab 8 part 1
 		Account account1 = new Account(1, "Jas", 0); //Creates Account ID 1 for Jas with 0 balance 
@@ -20,6 +20,10 @@ public class Program {
 		Account partnerAccount = myAccount;
 		partnerAccount.addInterest();
 		partnerAccount.getDetails();
+		if(myAccount==partnerAccount) {
+		match = true; 
+		System.out.println("Accounts match: " + match);
+		}
 		System.out.println();
 		//Memory address value is passed in
 		Account myAccount2 = new Account(3, "Luis", 100); //new creates a new instance of the class on the heap and returns the address

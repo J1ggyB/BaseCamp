@@ -4,7 +4,7 @@ package com.looper;
 public class Looper {
 
 	public static void main(String[] args) {
-		int[] myArray = {1,2,3,4,5};	//Declaring an Array with five numbers
+		int[] myArray = {12,22,13,24,35};	//Declaring an Array with five numbers
 		//FOR LOOP TO SEARCH A BASIC ARRAY-----------------------------------------------------------
 		System.out.println("FOR LOOP EXAMPLE WITH SWITCH");
 		for( int i = 0; i < myArray.length; i++ )// initialise a counter in this case i we will add one each loop set a stop point (i<myArray.length) then iterate i++
@@ -55,8 +55,8 @@ public class Looper {
         
         //THE NEW FOR EACH LOOP TO SEARCH AN ARRAY---------------------------------------
 		System.out.println("FOR EACH LOOP EXAMPLE");
-        for(int cnt : myArray) {
-        	System.out.println(" value at index counter equals: "  + myArray[cnt-1] );
+        for(int val: myArray) {                                                                                             //int val will automatically be populated by array value on each loop - The counter is hidden
+        	System.out.println(" The current value equals: "  + val);
         }
         //------------------------------------------------------------------------------------------------------------------------
         
@@ -83,6 +83,28 @@ public class Looper {
         System.out.println("\n\t\tExample:");
         System.out.println("\t\tThe value of Column 3 Row 2 is:"+ myMultiDimensionalArray[2][3]);  //Count it out as 0-3 Rows and 0-3 Columns (Rows First)
         
-         
+         //Challenge create a multi dimensional Array with 2 cols and three rows and print out the table followed by the value of column 2 row 2 - use a \t to tab the values out
+        //Step 1 declare and initialise you Array
+        //Step 2 create nested for loops to iterate through the whole table and print it out -  System.out.println(NAME_OF_ARRAY[][]);
+        //Step 3  find the value at a specific index and print it out -   System.out.println("The value of Column  2Row 2 is:"+ NAME_OF_ARRAY[?][?]);  
+        
+        String[][] multiArray = {
+        		                                               {"Col1Row1\t\t", "Col2Row1\n"},
+        		                                               {"Col1Row2\t\t", "Col2Row2\n"},
+        		                                               {"Col1Row3\t\t", "Col2Row3"}
+        												};  
+        System.out.println("\n\n");
+        for(int i = 0; i <3;i++) {
+        	for(int j =0; j<2;j++) {
+        		System.out.print(  multiArray[i][j ]);
+        	}
+        }
+		System.out.print( "\n The value of Col2 Row2 is: " + multiArray[1][1]);
+        
         }
 	}
+
+
+
+
+

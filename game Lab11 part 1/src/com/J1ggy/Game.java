@@ -17,6 +17,7 @@ public class Game extends Canvas {
 	Shape shape3 = new Shape(50,700,70,70, SHAPE_TYPE.OVAL);
 	Shape shape4 = new Shape(700,600,70,70, SHAPE_TYPE.ARC);
 	Shape shape5 = new Shape(350,350,70,70, SHAPE_TYPE.RECTANGLE);
+	Shape shape6 = new Shape(150,100,70,70, SHAPE_TYPE.OVAL);
 	public static void main(String[] args) {//Execute the program
 	      Game myGame = new Game();//Create an instance of the Game class
 		}
@@ -26,6 +27,7 @@ shapes.add(shape2);
 shapes.add(shape3);
 shapes.add(shape4);
 shapes.add(shape5);
+shapes.add(shape6);
 JFrame frame = new JFrame();//Create a frame object (a Window)
 this.setSize(800, 800);//Set the size of the Canvas or Game
 frame.add(this); //Add the frame to the Game
@@ -72,6 +74,7 @@ GradientPaint gtoo = new GradientPaint(0,0,Color.GREEN,800, 00,Color.ORANGE);
 GradientPaint otor = new GradientPaint(0,0,Color.ORANGE,800, 800,Color.RED);
 GradientPaint rtop = new GradientPaint(0,0,Color.RED,800, 800,Color.PINK);
 GradientPaint blktolg = new GradientPaint(0,0,Color.BLACK,400, 400,Color.LIGHT_GRAY);
+
 // move and draw each ball in balls array
 // Tip: use an enhanced for loop to pick 
 //	  each ball in the balls array.

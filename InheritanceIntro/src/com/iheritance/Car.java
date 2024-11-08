@@ -2,8 +2,10 @@ package com.iheritance;
 
 //Car class extending Vehicle 
 class Car extends Vehicle implements SteeringWheel {
+	//Fields------------------------------------------------------------------------------------------------------
  protected int speed;
  protected String direction;
+ //-Constructors--------------------------------------------------------------------------------------------------
  public Car(String make, String model, int noOfWheels) {
      super(make, model, noOfWheels);
  }
@@ -11,9 +13,10 @@ class Car extends Vehicle implements SteeringWheel {
      super(make, model, noOfWheels);
      this.speed = speed;
  }
+ //Methods----------------------------------------------------------------------------------------------------------
 	public String turnLeft() {
 			this.direction = "West";	
-		return direction;
+		return direction; 
 	}
 	public String turnRight( ){
 		this.direction = "East";	

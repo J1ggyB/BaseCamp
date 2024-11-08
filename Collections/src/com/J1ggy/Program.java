@@ -13,14 +13,21 @@ public class Program {
 	public static void main(String[] args) {
 		// ArrayList------------------------------------------------------------NOT THAT FAST                      ******
 		//Think of it as a mutable Array of objects - If we want primitives we must use Wrapper classes
-		ArrayList <String> myList = new ArrayList<>();
+		ArrayList<String> myList = new ArrayList<String>();
 		myList.add("Bob");
 		myList.add("Rob");
 		myList.add("Billy");
 		myList.add("Brenda");                                                                                                    //Try Integers  get an average as an int
 		myList.add("Frank");
+		myList.add("June");
 		System.out.println(myList);
-		System.out.println(myList.get(1) + " - Should be Rob?");
+		System.out.println("****************************************");
+		String strg = "";
+		strg +=myList;
+		String strg2 = strg.substring(1, strg.lastIndexOf(']'));
+		System.out.println(strg2);
+		System.out.println("**************************************");
+		System.out.println(myList.get(1) + " - Should be Rob?");   //NOTICE ROUND BRACKETS
 		System.out.println("Why should it be Rob");
 		//--------------------------------------------------------------------------
 		System.out.println("----------------------------------");

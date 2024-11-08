@@ -7,7 +7,7 @@ public class Program {
 		firstAccount.withdraw(50.00);
 		String accDetails = firstAccount.getDetails();
 		System.out.println(accDetails);
-		firstAccount.withdraw(60.00);
+		firstAccount.withdraw(10.00);
 		accDetails = firstAccount.getDetails();
 		System.out.println(accDetails);
 		
