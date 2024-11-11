@@ -59,6 +59,7 @@ public class Account {
                 } catch (IOException e) {//If log does not exist
                     System.out.println("Error logging message: " + e.getMessage());
                 }
+                System.out.println(" Thankyou and Good Bye!");
                 break; // Exit the loop after successful withdrawal
             }
         }
