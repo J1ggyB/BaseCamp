@@ -18,6 +18,7 @@ import java.awt.ComponentOrientation;
 import javax.swing.JTextField;
 import javax.swing.JCheckBox;
 import java.awt.Font;
+import javax.swing.ImageIcon;
 
 public class myJFrame extends JFrame {
 
@@ -54,65 +55,70 @@ public class myJFrame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 483, 307);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(2, 31, 28));
+		contentPane.setBackground(new Color(222, 221, 218));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Enter email");
-		lblNewLabel.setForeground(new Color(255, 255, 255));
-		lblNewLabel.setBounds(30, 161, 142, 15);
+		lblNewLabel.setForeground(new Color(0, 0, 0));
+		lblNewLabel.setBounds(30, 191, 142, 15);
 		contentPane.add(lblNewLabel);
 		
 		JButton Submit = new JButton("Submit");
-		Submit.setBounds(55, 214, 104, 25);
+		Submit.setBounds(30, 218, 104, 25);
 		contentPane.add(Submit);
 		
 		JLabel RegLabel = new JLabel("Register Membership");
-		RegLabel.setFont(new Font("Chandas", Font.BOLD, 16));
-		RegLabel.setBounds(100, 15, 205, 23);
-		RegLabel.setForeground(new Color(143, 240, 164));
+		RegLabel.setFont(new Font("Uroob", Font.BOLD, 16));
+		RegLabel.setBounds(30, 38, 205, 23);
+		RegLabel.setForeground(new Color(2, 21, 28));
 		RegLabel.setVisible(false);
 		contentPane.add(RegLabel);
 		
 		eMail = new JTextField();
-		eMail.setBounds(new Rectangle(124, 159, 205, 19));
+		eMail.setBounds(new Rectangle(124, 189, 142, 19));
 		eMail.setColumns(10);
 		contentPane.add(eMail);
 		
 		JCheckBox CheckBox25 = new JCheckBox("1-25");
 		CheckBox25.setSelected(true);
-		CheckBox25.setBackground(new Color(1, 30, 28));
-		CheckBox25.setForeground(new Color(255, 255, 255));
-		CheckBox25.setBounds(30, 117, 71, 23);
+		CheckBox25.setBackground(new Color(222, 221, 218));
+		CheckBox25.setForeground(new Color(0, 0, 0));
+		CheckBox25.setBounds(30, 160, 71, 23);
 		contentPane.add(CheckBox25);
 		
 		JCheckBox checkBoxOver = new JCheckBox("Over 25");
-		checkBoxOver.setForeground(new Color(249, 250, 244));
-		checkBoxOver.setBackground(new Color(1, 30, 28));
-		checkBoxOver.setBounds(124, 117, 129, 23);
+		checkBoxOver.setForeground(new Color(0, 0, 0));
+		checkBoxOver.setBackground(new Color(222, 221, 218));
+		checkBoxOver.setBounds(124, 160, 129, 23);
 		contentPane.add(checkBoxOver);
 		
 		SName = new JTextField();
-		SName.setBounds(124, 83, 129, 19);
+		SName.setBounds(124, 133, 129, 19);
 		contentPane.add(SName);
 		SName.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Surname");
-		lblNewLabel_1.setForeground(Color.WHITE);
-		lblNewLabel_1.setBounds(30, 85, 142, 15);
+		lblNewLabel_1.setForeground(new Color(0, 0, 0));
+		lblNewLabel_1.setBounds(30, 137, 142, 15);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Forename");
-		lblNewLabel_2.setForeground(Color.WHITE);
-		lblNewLabel_2.setBounds(30, 50, 142, 15);
+		lblNewLabel_2.setForeground(new Color(0, 0, 0));
+		lblNewLabel_2.setBounds(30, 106, 142, 15);
 		contentPane.add(lblNewLabel_2);
 		
 		FName = new JTextField();
-		FName.setBounds(124, 48, 129, 19);
+		FName.setBounds(124, 102, 129, 19);
 		contentPane.add(FName);
 		FName.setColumns(10);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setIcon(new ImageIcon("/home/watso/Desktop/SquareEgg.jpg"));
+		btnNewButton.setBounds(303, 38, 142, 145);
+		contentPane.add(btnNewButton);
 		
 		Submit.addActionListener(new ActionListener() {   // Add Action Listeners for each JButton - Accelerate
 			  public void actionPerformed(ActionEvent e) { 

@@ -28,7 +28,8 @@ public class Program {
 				RacingCar racer = (RacingCar) car;     // Cast back to type of "RacingCar" to get the full functionality of the subclass
 				String drvr = racer.getDriver();
 				System.out.println("Driver: " + drvr);
-
+				int Tfactor= racer.getTurboFactor() ;
+				System.out.println("Turbo Factor:  " + Tfactor);
 			}
 		}
 	}

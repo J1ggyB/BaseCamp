@@ -4,13 +4,15 @@ import java.awt.Color;
 import java.awt.Point;
 
 public class Rectangle extends Shape {
+	double sideA;
+	double sideB;
+
+	
 public Rectangle(double sideA, double sideB, Color colour, Point position) {
 		super(colour, position);
 		this.sideA = sideA;
 		this.sideB = sideB;
 	}
-double sideA;
-double sideB;
 
 public double getArea() {
 	double result = sideA * sideB;

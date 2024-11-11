@@ -1,6 +1,8 @@
 package com.J1ggy;
 
 public class RacingCar extends Car{
+
+
 	//--Fields--------------------------------
 	private String driver;
 	private int turboFactor;
@@ -15,6 +17,14 @@ public class RacingCar extends Car{
 		super.Accelerate(secs);
 		speed *= turboFactor;
 	}
+	public void setTurboFactor(int turboFactor) {
+		this.turboFactor = turboFactor;
+	}
+	
+	public int getTurboFactor() {
+		return turboFactor;
+	}
+	
 	public String getDriver() {
 		return driver;
 	}

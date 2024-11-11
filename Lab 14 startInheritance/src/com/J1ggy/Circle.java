@@ -6,12 +6,13 @@ import java.awt.Color;
 import java.awt.Point;
 
 public class Circle extends Shape{
+	public double radius;
 	
 public Circle(double radius, Color colour, Point position) {
 		super(colour,  position);
 		this.radius = radius;
 	}
-public double radius;
+
 
 public String  getArea() {
 	double result = Math.pow((PI * radius), 2);
