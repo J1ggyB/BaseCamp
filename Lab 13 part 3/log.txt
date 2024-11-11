@@ -1,6 +1,10 @@
-
-Error: No exception thrown at this time
-Error: No exception thrown at this time
-Error: No exception thrown at this time
-Error: No exception thrown at this time
-Error: No exception thrown at this time
+Log file 'log.txt' successfully created.
+Withdrawal of 50.0 successful. New balance: 50.0
+Insufficient funds for withdrawal of 60.0 from account 123. Current balance: 50.0
+Withdrawal of 40.0 successful. New balance: 10.0
+Withdrawal of 50.0 successful. New balance: 50.0
+Insufficient funds for withdrawal of 60.0 from account 123. Current balance: 50.0
+Withdrawal of 40.0 successful. New balance: 10.0
+Withdrawal of 50.0 successful. New balance: 50.0
+Insufficient funds for withdrawal of 60.0 from account 123. Current balance: 50.0
+Withdrawal of 40.0 successful. New balance: 10.0
