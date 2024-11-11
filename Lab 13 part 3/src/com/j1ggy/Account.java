@@ -19,15 +19,15 @@ public class Account {
 
     void withdraw(double amount) {
 
-        while (true) {
-            if (amount > this.balance) {
+        while (true) {  // set up infinite while
+            if (amount > this.balance) {//check the user can cover the withdrawal amount
                 String message = "Insufficient funds for withdrawal of " + amount + " from account " + id + ". Current balance: " + this.balance;
                 System.out.println(message);
                 
                 // Log the failed withdrawal attempt
                 try {
-                    log(message);
-                } catch (IOException e) {
+                    log(message);  // log the failure message
+                } catch (IOException e) {  // If we cannot access the log file print a message to the Console
                     System.out.println("Error logging message: " + e.getMessage());
                 }
                 
@@ -35,13 +35,13 @@ public class Account {
                 System.out.print("Would you like to retry? (yes/no): ");
                 String response = scanner.nextLine();
 
-                if (response.equalsIgnoreCase("yes")) {
+                if (response.equalsIgnoreCase("yes")) {// If the user wants to try again
                     System.out.print("Enter the amount to withdraw: ");
-                    try {
+                    try {// Try and scan user input
                         amount = Double.parseDouble(scanner.nextLine());
-                    } catch (NumberFormatException e) {
+                    } catch (NumberFormatException e) {//Catch bad input and print out some guidance
                         System.out.println("Invalid amount entered. Please try again.");
-                        continue; // Retry the withdrawal
+                        continue; // Retry the withdrawal - ie: ignore the rest of construct and re-enter the while loop
                     }
                 } else {
                     Scanner scanner = new Scanner(System.in);
@@ -55,8 +55,8 @@ public class Account {
                 String message = "Withdrawal of " + amount + " successful. New balance: " + this.balance;
                 System.out.println(message);
                 try {
-                    log(message);
-                } catch (IOException e) {
+                    log(message);// Try to log  message
+                } catch (IOException e) {//If log does not exist
                     System.out.println("Error logging message: " + e.getMessage());
                 }
                 break; // Exit the loop after successful withdrawal
@@ -89,8 +89,8 @@ public class Account {
         String message = "Account: " + id + " is closed";
         System.out.println(message);
         try {
-            log(message);
-        } catch (IOException e) {
+            log(message);//Try to log message
+        } catch (IOException e) {//If log does not exist
             System.out.println("Error logging message: " + e.getMessage());
         }
         // Additional logic to mark the account as closed could be added here
