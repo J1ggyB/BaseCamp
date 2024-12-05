@@ -14,9 +14,11 @@ class RacingCar extends Car {
     // Override accelerate method for faster speed
     @Override
     public void accelerate() {
-        System.out.println("Racing car accelerating at high speed!");
+   System.out.println("The speed is: "+ speed);     
+   System.out.println("Car is accelerating...");
+     speed += 20;
+     System.out.println("The speed is: "+ speed);     
     }
-
     // Print characteristics method
     @Override
     public void printCharacteristics() {
@@ -30,6 +32,14 @@ class RacingCar extends Car {
         this.speed = speed;
         System.out.println("Racing car speed set to " + speed + " mph.");
     }
-
+@Override
+public void brake() {
+	System.out.println("The car was travelling at: " + speed);
+    System.out.println("Car is braking...");
+    speed = speed/2;
+    System.out.println("The car is slowing down: " +speed);
+    speed = 0;
+    System.out.println ("The car has stopped");
+}
     
 }

@@ -1,7 +1,7 @@
 package com.iheritance;
 
 //Abstract Vehicle class - THE PURPOSE OF AN ABSTRACT CLASS IS TO DEFINE THE COMMON CHARACTERISTICS OF SUBCLASSES
- public abstract class Vehicle {
+ public abstract class Vehicle {  //INHERITANCE - Commonalities
 
 
 

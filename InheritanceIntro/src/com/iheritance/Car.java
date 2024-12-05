@@ -3,12 +3,15 @@ package com.iheritance;
 //Car class extending Vehicle 
 class Car extends Vehicle implements SteeringWheel {
 	//Fields------------------------------------------------------------------------------------------------------
- protected int speed;
+protected int speed;
  protected String direction;
  //-Constructors--------------------------------------------------------------------------------------------------
+ 
+ 
  public Car(String make, String model, int noOfWheels) {
      super(make, model, noOfWheels);
  }
+ 
  public Car(String make, String model, int noOfWheels, int speed) {
      super(make, model, noOfWheels);
      this.speed = speed;
@@ -27,7 +30,19 @@ class Car extends Vehicle implements SteeringWheel {
 	return direction;
 	}
 	public String reverse() {
+		switch(this.direction) {
+		case "North":
 		this.direction = "South";	
+		break;
+		case "East":
+		this.direction = "West";	
+		break;
+		case "South":
+		this.direction = "North";	
+		break;
+		case "West":
+		this.direction = "East";	
+		}
 	return direction;
 	}
 	public void printdirection() {
@@ -35,16 +50,24 @@ class Car extends Vehicle implements SteeringWheel {
 	}
 @Override
  public void accelerate() {
-     System.out.println("Car is accelerating...");
+System.out.println("The speed is: "+ speed);     
+System.out.println("Car is accelerating...");
+  speed += 10;
+  System.out.println("The speed is: "+ speed);     
  }
 
  public void brake() {
      System.out.println("Car is braking...");
+     speed = 0;
+     System.out.println ("The car has stopped");
  }
 
  public void setSpeed(int speed) {
      this.speed = speed;
      System.out.println("Car speed set to " + speed + " mph.");
+ }
+ public int getSpeed() {
+return speed;
  }
 
  // Print characteristics method
