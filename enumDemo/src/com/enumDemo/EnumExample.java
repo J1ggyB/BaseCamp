@@ -60,6 +60,11 @@ public class EnumExample {
 	        for (AccessLevel access : AccessLevel.values()) { //Using for each loop and .getDescription() method of the enum structure to print out access levels of each constant
 	         System.out.println(access + ": " + access.getDescription()); 
 	        }
-	        System.out.println("\n----------------------------------End--------------------------------------------\n");
+	        System.out.println("\n----------------------------------Example 8------------------------------------------\n");
+	        
+	        DaysOfWeek day = DaysOfWeek.Thursday;
+	        System.out.println("Day: " + day + " Has an Ordinal of: " + day.ordinal() + " but is actually Day: " + ((int)day.ordinal()+1));
+	        
+
 	    }
 	}

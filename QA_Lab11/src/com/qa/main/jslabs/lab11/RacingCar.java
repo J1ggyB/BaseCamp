@@ -10,7 +10,7 @@ public class RacingCar extends Car { // Inherits from Car
 		this.driver = driver;
 		this.turboFactor = turboFactor;
 	}
-//Override (Polymorphism) the Accelerate method from Car to take account of Turbo Factor	
+//Override the Accelerate method from Car to take account of Turbo Factor	
 	@Override
 	public void accelerate(int seconds) {
 		super.accelerate(seconds);

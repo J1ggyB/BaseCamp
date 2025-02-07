@@ -34,13 +34,13 @@ public class UserService {
 		if (trimmedPassword.length() < 6) throw new IllegalArgumentException("Password must contain at least 6 characters");
 
 		// password must contain at least 1 uppercase character
-		if (!trimmedPassword.matches("[A-Z|a-z|1-9]*[A-Z]+[A-Z|a-z|1-9]*")) throw new IllegalArgumentException("Password must contain at least 1 uppercase character");
+		if (!trimmedPassword.matches("[A-Z|a-z|0-9]*[A-Z]+[A-Z|a-z|0-9]*")) throw new IllegalArgumentException("Password must contain at least 1 uppercase character");
 		
 		// password must contain at least 1 lowercase character
-		if (!trimmedPassword.matches("[A-Z|a-z|1-9]*[a-z]+[A-Z|a-z|1-9]*")) throw new IllegalArgumentException("Password must contain at least 1 lowercase character");
+		if (!trimmedPassword.matches("[A-Z|a-z|0-9]*[a-z]+[A-Z|a-z|0-9]*")) throw new IllegalArgumentException("Password must contain at least 1 lowercase character");
 		
 		// password must contain at least 1 number
-		if (!trimmedPassword.matches("[A-Z|a-z|1-9]*[1-9]+[A-Z|a-z|1-9]*")) throw new IllegalArgumentException("Password must contain at least 1 number character");
+		if (!trimmedPassword.matches("[A-Z|a-z|1-9]*[1-9]+[A-Z|a-z|0-9]*")) throw new IllegalArgumentException("Password must contain at least 1 number character");
 		
 		// add user to map
 		users.put(trimmedUsername, trimmedPassword);  // Here we add the the new key/value pair
@@ -71,11 +71,11 @@ public class UserService {
 
 []  [Find one character from the options between the brackets]
 
-[A-Z|a-z|1-9]*  The | bar is "or"  should not be inside the expression (bad practice) should be [A-Za-z1-9]*    The * means 0..n of these
+[A-Z|a-z|0-9]*  The | bar is "or"  should not be inside the expression (bad practice) should be [A-Za-z0-9]*    The * means 0..n of these
 
 [A-Z]+   Matches any string that contains at least one [A-Z]  ie: Password must contain at least 1 uppercase character"  + indicates we must have 0 or one instance
 
- Last bit [A-Z|a-z|1-9]*  The * indicates - that it Matches 0..n instances of the pattern
+ Last bit [A-Z|a-z|0-9]*  The * indicates - that it Matches 0..n instances of the pattern
 
 Think of the * as being inclusive [abc]* can have zero or many lowercase alphabetical characters
 

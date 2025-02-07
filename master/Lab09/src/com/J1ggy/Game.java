@@ -14,7 +14,7 @@ public class Game extends Canvas { //Canvas is a subclass of Java Component inte
 	// call this array balls
 	Ball[] balls = new Ball[3];// Create an Array to hold three ball instances
 	Ball ball1 = new Ball(0,0,70,70);//Create three instances of Ball class
-	Ball ball2 = new Ball(400,300,70,70);	
+	Ball ball2 = new Ball(400,300,300,70);	
 	Ball ball3 = new Ball(50,700,70,70);
     Dimension window = new Dimension(800,800);
 	public static void main(String[] args) {//Execute the program

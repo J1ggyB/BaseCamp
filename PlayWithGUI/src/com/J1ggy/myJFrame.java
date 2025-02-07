@@ -116,7 +116,7 @@ public class myJFrame extends JFrame {
 		FName.setColumns(10);
 		
 		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setIcon(new ImageIcon("/home/watso/Desktop/SquareEgg.jpg"));
+		btnNewButton.setIcon(new ImageIcon("/home/watso/Downloads/MadChick.jpg"));
 		btnNewButton.setBounds(303, 38, 142, 145);
 		contentPane.add(btnNewButton);
 		

@@ -6,7 +6,7 @@ public class Program {
 		Car[] cars = {                       //DECLARE & INITIALISE AN ARRAY OF 4 CAR/RACINGCAR INSTANCES
 				new Car("Audi", 0), 
 				new Car("Merc", 0), 
-				new RacingCar("Mclaren", 0, "Alonzo", 5),
+				new RacingCar("Mclaren", 0, "Alonzo", 5), //Extends Car but is added to a Car Array - Polymorphism - IT WILL REQUIRE CASTING BACK TO RacingCar
 				new RacingCar("Pagani", 0, "Lewis", 4) 
 		};
 		
@@ -22,9 +22,9 @@ public class Program {
 			
 			System.out.printf("The %s is going %d MPH \n", car.getModel(), car.getSpeed()); //Print out models and speeds
 			
-			if (car instanceof RacingCar) { //If it is a RacingCar 
+			if (car instanceof RacingCar) { //If it is a RacingCar                                                                                                                                                   ****Casting back - step 1
 				RacingCar rCar = (RacingCar) car; // Cast the car to a RacingCar
-				System.out.printf("The driver's name is %s \n", rCar.getDriver()); // Print out the driver's name
+				System.out.printf("The driver's name is %s \n", rCar.getDriver()); // Print out the driver's name                                               ****Casting back - step 2
 			}
 		}
 	}

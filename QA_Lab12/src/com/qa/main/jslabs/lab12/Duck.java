@@ -8,11 +8,11 @@ public class Duck extends Bird implements Insurable{
 
 	@Override
 	public String getPremium() {
-		return "Expensive premium";
+		return "Expensive premium - Must be a Duck";
 	}
 
 	@Override
 	public String expires() {
-		return "Expires on blah blah";
+		return "Expires on blah blah - Must be a Duck";
 	}
 }
